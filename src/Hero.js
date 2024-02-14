@@ -1,7 +1,8 @@
 
 import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
+import '../node_modules/swiper/swiper-bundle.min.css'
 import { Swiper, SwiperSlide } from 'swiper/react'
-// import 'swiper/swiper-bundle.min.css'
+
 
 // import 'swiper/css/navigation';
 // import 'swiper/css/pagination';
