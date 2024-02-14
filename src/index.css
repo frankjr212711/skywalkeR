@@ -99,7 +99,6 @@ nav {
 /* SKYWALKER */
 .sky_content {
   width: 100%;
-  /* height: 100vh; */
   margin: auto;
 
   /* border: 1px solid red; */
@@ -211,6 +210,7 @@ nav {
 .sky-hero {
   width: 100%;
   height: 449px;
+  height: 100vh;
   margin: 280px auto 1rem auto;
   border: 1px solid red;
 }
