@@ -1,5 +1,11 @@
+import { Link } from 'react-router-dom';
+import { Nav } from '../Nav';
 export const Skywalker = () => {
   return (
+
+    <>
+
+   
     <div className="sky_content">
       <div className="content">
         <div className="sky_banners">
@@ -49,33 +55,46 @@ export const Skywalker = () => {
               </div>
             </div>
           </div>
-            
-          
 
           <div className="third_banner">
             <div className="third_banner_content">
               <div className="nav">
                 <ul>
                   <li>
-                    <a href="">
+                    <Link to="#">
                       WATERS
                       <i className="fa fa-caret-down"></i>
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="">MORE INFORMATION
+                    <Link to="#">MORE INFORMATION
                       <i className="fa fa-caret-down"></i>
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </div>
             </div>
-          </div>
-
-          
+            </div>
+            
         </div>
 
+        </div>
+
+
+        {<SkyHero/>}
       </div>
-    </div>
+    </>
+
+
+    
   );
 };
+
+
+const SkyHero = () => {
+  return (
+    <div className='sky-hero'>
+      skyHero
+    </div>
+  )
+}
