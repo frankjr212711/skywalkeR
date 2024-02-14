@@ -1,13 +1,194 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: 'Jost';
+}
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, .3);
+  z-index: 999;
+}
+.nav_content_tp {
+  width: 100%;
+  height: 50px;
+  /* background: red; */
+  border-bottom: 1px solid #f9f9f9;
+} 
+.nav_content_tp .content {
+  width: 80%;
+  height: inherit;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+.nav_content_tp .contact {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+  font-size: 14px;
+}
+.nav_content_tp .mail {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+}
+.nav_content_dn {
+  width: 100%;
+  height: 50px;
+}
+.nav_content_dn .content {
+  width: 80%;
+  height: inherit;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.logo_box {
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+}
+.nav_links .link {
+  display: inline-block;
+  margin-left: 1rem;
+}
+.nav_links .link a {
+  color: #424242;
+  transition: .3s ease;
+}
+.nav_links .link a:hover {
+  color: red;
+}
+.nav_content_dn .menu-btn {
+ 
+  display: none;
+}
+.res_nav_content_dn {
+  display: none;
+}
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 940px) {
+
+  .nav_links {
+    display: none;
+  }
+  .nav_content_tp .content {
+    width: 100%;
+    padding: 0 1.5rem;
+  }
+  .nav_content_dn .content {
+    width: 100%;
+    padding: 0 1.5rem;
+  }
+  .nav_content_dn .menu-btn {
+    width: 50px;
+    height: 35px;
+    cursor: pointer;
+    position: relative;
+    display: block;
+  }
+  .nav_content_dn .menu-btn span {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    width: 30px;
+    height: 6px;
+    background: #424242;
+    transition: all .3s ease;
+    display: inline-block;
+  }
+  .nav_content_dn .menu-btn span:nth-child(1) {
+    top: 6px;
+  }
+  .nav_content_dn .menu-btn span:nth-child(3) {
+    top: 27px;
+  }
+
+
+
+  /* RES_NAV */
+  .res_nav_content_dn {
+    width: 100%;
+    height:50px;
+    position: fixed;
+    top: 50px;
+    right: -100%;
+    display: block;
+    background: white;
+    transition: .4s ease;
+  }
+  .res_nav_content_dn.active {
+    right: 0;
+  }
+  .res_nav_content_dn .content {
+    width: 100%;
+    height: inherit;
+    margin: auto;
+    padding: 0 1.5rem;
+  }
+  .res_nav_content_dn header{
+    height: inherit;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+  }
+  .res_nav_content_dn .nav_links_ {
+    position: absolute;
+    top: 110%;
+    left: 0;
+    width: 100%;
+    background: #fff;
+  }
+  .res_nav_content_dn .nav_links_ ul {
+    width: 80%;
+    padding: 0 1.5rem;
+  }
+  .res_nav_content_dn .content .close-btn {
+    width: 50px;
+    height: 35px;
+    cursor: pointer;
+    position: relative;
+    /* border: 1px solid red; */
+    display: block;
+  }
+  .res_nav_content_dn .content .close-btn span {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    width: 30px;
+    height: 6px;
+    background: #424242;
+    transition: all .3s ease;
+    display: inline-block;
+  }
+  .res_nav_content_dn .close-btn span:nth-child(1) {
+    transform: rotate(-45deg);
+  }
+  .res_nav_content_dn .close-btn span:nth-child(2) {
+    transform: rotate(45deg);
+  }
+  .res_nav_content_dn .close-btn:hover span{
+    transform: rotate(0)
+}
+
 }
