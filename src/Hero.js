@@ -3,7 +3,7 @@
 
 export const Hero = () => {
   return (
-    <div className='sky-hero'>
+    <div className='hero'>
       skyHero
     </div>
   )
