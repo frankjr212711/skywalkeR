@@ -1,4 +1,4 @@
-
+import './Nav.css';
 import { Link } from "react-router-dom";
 import { useState } from "react";
 
@@ -6,7 +6,11 @@ import { useState } from "react";
 
 export const Navbar = () => {
   const [open, setOpen] = useState(false);
+  const [click, setClick] = useState(true);
 
+  const closeMenu = () => {
+    setOpen(false)
+  }
   return (
     <nav>
       <div className="nav_content_tp">
@@ -47,14 +51,18 @@ export const Navbar = () => {
                 <Link to="/librex">Librex</Link>
               </li>
               <li className="link">
-                <Link to="/fifthstar">5thStar</Link>
+                <Link to="/fifthstar">Fifthstar</Link>
               </li>
               <li className="link">
                 <Link to="/company">
                   Company
                   <i className="fa fa-caret-down"></i>
                 </Link>
-
+                <div className="drop_menu">
+                  <Link to="/about">About Us</Link>
+                  <Link to="/contact">Contact</Link>
+                  <Link to="/careers">Careers</Link>
+                </div>
               </li>
             </ul>
           </div>
@@ -70,7 +78,7 @@ export const Navbar = () => {
 
 
       <div
-        className={open ? "res_nav_content_dn" : "res_nav_content_dn active"}
+        className={open ? "res_nav_content_dn active" : "res_nav_content_dn "}
       >
         <div className="content">
           <header>
@@ -86,25 +94,26 @@ export const Navbar = () => {
             </div>
           </header>
 
-          <div className="nav_links_">
+          <div className={open ? "nav_links_ active" : 'nav_links_'}>
             <ul>
               <li className="link">
-                <Link to="/">Home</Link>
+                <Link to="/" onClick={closeMenu}>Home</Link>
               </li>
               <li className="link">
-                <Link to="/skywalker">Skywalker</Link>
+                <Link to="/skywalker" onClick={closeMenu}>Skywalker</Link>
               </li>
               <li className="link">
-                <Link to="/gjr">Gjr</Link>
+                <Link to="/gjr" onClick={closeMenu}>Gjr</Link>
               </li>
               <li className="link">
-                <Link to="/librex">Librex</Link>
+                <Link to="/librex" onClick={closeMenu}>Librex</Link>
               </li>
               <li className="link">
-                <Link to="/fifth">5thStar</Link>
+                <Link to="/fifth" onClick={closeMenu}>5thStar</Link>
               </li>
             </ul>
           </div>
+
         </div>
       </div>
     </nav>

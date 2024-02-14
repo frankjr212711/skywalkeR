@@ -1,129 +1,126 @@
-import { Link } from 'react-router-dom';
-import { Hero } from '../Hero';
+import { Link } from "react-router-dom";
+import { Hero } from "../Hero";
+
+
+const slides = [
+  {url: 'images/sky-img-01.jpg', title: 'sky_img_01'},
+  {url: 'images/sky-img-02.jpg', title: 'sky_img_02'},
+  {url: 'images/sky-img-03.jpg', title: 'sky_img_03'},
+  {url: 'images/sky-img-04.jpg', title: 'sky_img_04'}
+]
+
+
 export const Skywalker = () => {
   return (
-
     <>
-
-   
       <div className="sky_content">
-        
-      <div className="content">
-        <div className="sky_banners">
-          
-
-          <div className="top_banner">
-            <div className="top_banner_content">
-              <div className="title">
-                <h3>Quality Waters delivered accross Ghana</h3>
-              </div>
-              <div className="socials">
-                <i className="fa fa-envelope"></i>
-                <i className="fa-brands fa-facebook-f"></i>
-                <i className="fa-brands fa-twitter"></i>
-                <i className="fa-brands fa-tiktok"></i>
+        <div className="content">
+          <div className="sky_banners">
+            <div className="top_banner">
+              <div className="top_banner_content">
+                <div className="title">
+                  <h3>Quality Waters delivered accross Ghana</h3>
+                </div>
+                <div className="socials">
+                  <i className="fa fa-envelope"></i>
+                  <i className="fa-brands fa-facebook-f"></i>
+                  <i className="fa-brands fa-twitter"></i>
+                  <i className="fa-brands fa-tiktok"></i>
+                </div>
               </div>
             </div>
-          </div>
-
-          <div className="mid_banner">
-            <div className="mid_banner_content">
-           
+            <div className="mid_banner">
+              <div className="mid_banner_content">
                 <div className="logo-box">
                   <i className="fa fa-snowflake"></i>
                   {/* <img src="" alt="skywalker_logo" /> */}
-                  <h2>SKYWALKER</h2>
+                  <h1>SKYWALKER</h1>
                   <span>water never tasted so good...</span>
                 </div>
-              
-              <div className="info">
-                
-                <div className="email">
-                  <i className="fa fa-envelope"></i>
-                  <span>EMAIL</span>
-                </div>
 
-                <div className="hours">
-                  <i className="fa fa-clock"></i>
-                  <span>09:00 - 17:00</span>
-                </div>
+                <div className="info">
+                  <div className="email">
+                    <i className="fa fa-envelope"></i>
+                    <span>EMAIL</span>
+                  </div>
 
-                <div className="phone">
-                  <i className="fa fa-phone"></i>
-                  <span>+233 245 855 385</span>
+                  <div className="hours">
+                    <i className="fa fa-clock"></i>
+                    <span>09:00 - 17:00</span>
+                  </div>
+
+                  <div className="phone">
+                    <i className="fa fa-phone"></i>
+                    <span>+233 245 855 385</span>
+                  </div>
                 </div>
-              
+              </div>
+            </div>
+            <div className="third_banner">
+              <div className="third_banner_content">
+                <div className="nav">
+                  <ul>
+                    <li>
+                      <Link to="#">
+                        WATERS
+                        <i className="fa fa-caret-down"></i>
+                      </Link>
+                    </li>
+                    <li>
+                      <Link to="#">
+                        MORE INFORMATION
+                        <i className="fa fa-caret-down"></i>
+                      </Link>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
-
-          <div className="third_banner">
-            <div className="third_banner_content">
-              <div className="nav">
-                <ul>
-                  <li>
-                    <Link to="#">
-                      WATERS
-                      <i className="fa fa-caret-down"></i>
-                    </Link>
-                  </li>
-                  <li>
-                    <Link to="#">MORE INFORMATION
-                      <i className="fa fa-caret-down"></i>
-                    </Link>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            </div>
-            
         </div>
 
-        </div>
+        <Hero slides={ slides} />
 
-
-        {<Hero />}
-   
         <div className="category__section">
           <div className="category_content">
-          <div className="items__container">
-          <div className="item">
-            <div className="item__img_box">
-              <div className="img_box">
-                <img src="/images/sky-img-11.png" alt="" />
+            <div className="items__container">
+              <div className="item">
+                <div className="item__img_box">
+                  <div className="img_box">
+                    <img src="/images/sky-img-11.png" alt="" />
+                  </div>
+                </div>
+                <div className="info__box">
+                  <h5 className="item__desc">DISPENSER BOTTLES</h5>
+                  <p className="item__post">CHANGE ON REQUEST</p>
+                </div>
               </div>
-            </div>
-            <div className="info__box">
-              <h5 className="item__desc">DISPENSER BOTTLES</h5>
-              <p className="item__post">CHANGE ON REQUEST</p>
-            </div>
-          </div>
 
-          <div className="item">
-            <div className="item__img_box">
-              <div className="img_box">
-                <img src="/images/sky-img-11.png" alt="" />
+              <div className="item">
+                <div className="item__img_box">
+                  <div className="img_box">
+                    <img src="/images/sky-img-11.png" alt="" />
+                  </div>
+                </div>
+                <div className="info__box">
+                  <h5 className="item__desc">DISPENSER BOTTLES</h5>
+                  <p className="item__post">CHANGE ON REQUEST</p>
+                </div>
               </div>
-            </div>
-            <div className="info__box">
-              <h5 className="item__desc">DISPENSER BOTTLES</h5>
-              <p className="item__post">CHANGE ON REQUEST</p>
-            </div>
-          </div>
 
-          <div className="item">
-            <div className="item__img_box">
-              <div className="img_box">
-                <img src="/images/sky-img-11.png" alt="" />
-              </div>
-            </div>
-            <div className="info__box">
-              <h5 className="item__desc">DISPENSER BOTTLES</h5>
-              <p className="item__post">CHANGE ON REQUEST</p>
-            </div>
-          </div>
+              {/* <div className="item">
+                <div className="item__img_box">
+                  <div className="img_box">
+                    <img src="/images/sky-img-11.png" alt="" />
+                  </div>
+                </div>
+                <div className="info__box">
+                  <h5 className="item__desc">DISPENSER BOTTLES</h5>
+                  <p className="item__post">CHANGE ON REQUEST</p>
+                </div>
+              </div> */}
 
-          {/* <div className="item">
+              {/* <div className="item">
           <div className="item__img_box">
             image
           </div>
@@ -133,30 +130,25 @@ export const Skywalker = () => {
           </div>
         </div> */}
             </div>
-            
+
             <div className="notice__board_container">
-          <h1>
-            Why Drink just any Water when you can drink <span>Pure,</span> &{" "}
-            <span>Clean</span> instead
-          </h1>
+              <h1>
+                Why Drink just any Water when you can drink <span>Pure,</span> &{" "}
+                <span>Clean</span> instead
+              </h1>
 
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
-            sit perspiciatis rem, ducimus hic impedit quibusdam omnis cum a,.
-          </p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Reiciendis sit perspiciatis rem, ducimus hic impedit quibusdam
+                omnis cum a,.
+              </p>
 
-          {/* <Button>READ MORE</Button>
+              {/* <Button>READ MORE</Button>
           <Button>READ MORE</Button> */}
-        </div>
-      </div>
+            </div>
           </div>
-       
-
-     
-
+        </div>
       </div>
     </>
   );
 };
-
-

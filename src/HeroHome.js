@@ -1,13 +1,13 @@
 import { useState } from "react"
 
 
-export const Hero = ({ slides }) => {
+export const HeroHome = ({ slides }) => {
   const [current, setCurrent] = useState(0);
 
   const heroStyles = {
     width: '100%',
     height: '749px',
-    margin: '200px auto 1rem auto',
+    margin: '100px auto 1rem auto',
     position: 'relative'
   }
   const slideStyles = {
