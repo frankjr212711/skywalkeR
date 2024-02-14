@@ -49,6 +49,9 @@ export const Navbar = () => {
               <li className="link">
                 <Link to="/fifthstar">5thStar</Link>
               </li>
+              <li className="link">
+                <Link to="/company">Company</Link>
+              </li>
             </ul>
           </div>
 
