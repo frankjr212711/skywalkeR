@@ -6,7 +6,8 @@ export const Skywalker = () => {
     <>
 
    
-    <div className="sky_content">
+      <div className="sky_content">
+        
       <div className="content">
         <div className="sky_banners">
           
@@ -82,6 +83,11 @@ export const Skywalker = () => {
 
 
         {<SkyHero/>}
+      </div>
+
+
+      <div className="udner">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, ab velit fugiat molestias delectus expedita. Distinctio nulla quisquam sed doloribus mollitia accusantium quo, numquam reiciendis, corrupti non eum repellat. Ad!</p>
       </div>
     </>
 
