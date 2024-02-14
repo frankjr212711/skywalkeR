@@ -105,13 +105,14 @@ nav {
   margin: auto;
 
   /* border: 1px solid red; */
-  opacity: .9;
 }
+
 .sky_content .content {
   position: fixed;
   top: 100px;
   left: 0;
   width: 100%;
+  z-index: 99;
 }
 /* TOP-BANNER */
 .top_banner {
