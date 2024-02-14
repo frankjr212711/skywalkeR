@@ -1,9 +1,16 @@
 
+import { Hero } from '../Hero';
+
 
 export const Gjr = () => {
   return (
     <div>
-    Gjr
+      Gjr
+
+
+
+
+      <Hero/>
     </div>
   )
 }

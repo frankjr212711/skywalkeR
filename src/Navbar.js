@@ -50,7 +50,11 @@ export const Navbar = () => {
                 <Link to="/fifthstar">5thStar</Link>
               </li>
               <li className="link">
-                <Link to="/company">Company</Link>
+                <Link to="/company">
+                  Company
+                  <i className="fa fa-caret-down"></i>
+                </Link>
+
               </li>
             </ul>
           </div>

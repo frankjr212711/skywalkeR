@@ -1,10 +1,13 @@
-
+import { Hero } from '../Hero';
 
 
 export const Librex = () => {
   return (
     <div>
-    Librex
+      Librex
+      
+
+      <Hero/>
     </div>
   )
 }

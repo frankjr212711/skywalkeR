@@ -61,10 +61,13 @@ nav {
 }
 .nav_links .link {
   display: inline-block;
-  margin-left: 1rem;
+  margin-left: 1.5rem;
 }
 .nav_links .link a {
   color: #424242;
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
   transition: .3s ease;
 }
 .nav_links .link a:hover {
@@ -213,6 +216,9 @@ nav {
   margin: 280px auto 1rem auto;
   border: 1px solid red;
 }
+
+
+
 
 
 

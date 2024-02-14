@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { Nav } from '../Nav';
+import { Hero } from '../Hero';
 export const Skywalker = () => {
   return (
 
@@ -82,7 +82,7 @@ export const Skywalker = () => {
         </div>
 
 
-        {<SkyHero/>}
+        {<Hero/>}
       </div>
 
 
@@ -97,10 +97,3 @@ export const Skywalker = () => {
 };
 
 
-const SkyHero = () => {
-  return (
-    <div className='sky-hero'>
-      skyHero
-    </div>
-  )
-}
