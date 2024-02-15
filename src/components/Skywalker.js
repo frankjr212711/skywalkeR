@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { Hero } from "../Hero";
-
+import './Skywalker.css';
 
 const slides = [
   {url: 'images/sky-img-01.jpg', title: 'sky_img_01'},
@@ -13,7 +13,7 @@ const slides = [
 export const Skywalker = () => {
   return (
     <>
-      <div className="sky_content">
+      <div className="sky_section">
         <div className="content">
           <div className="sky_banners">
             <div className="top_banner">
