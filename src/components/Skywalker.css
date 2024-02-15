@@ -23,15 +23,17 @@
   background: #1e73be;
   display: flex;
   align-items: center;
+  color: #fff;
 }
 .top_banner_content {
   width: 80%;
   margin: auto;
-  color: #fff;
-
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: center; 
+}
+.top_banner_content .title {
+  /* color: #fff; */
 }
 .top_banner_content .socials {
   display: flex;
@@ -51,7 +53,7 @@
   margin: auto;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-between !important;
 }
 .mid_banner_content .logo-box {
   display: flex;
@@ -61,6 +63,7 @@
 }
 .mid_banner_content .logo-box h1 {
   /* font-size: 2.5rem; */
+  color: #000044;
 }
 .mid_banner_content .logo-box i {
   font-size: 2.5rem;
@@ -92,7 +95,7 @@
 .third_banner {
   width: 100%;
   height: 50px;
-  background-image:linear-gradient(to right, #299fe7, rgba(6, 87, 137, 0.593), #299fe7) ;
+  background-image:linear-gradient(to right, #299fe7, transparent) ;
 
 }
 .third_banner_content {

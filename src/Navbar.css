@@ -48,7 +48,6 @@ nav {
   justify-content: space-between;
   align-items: center;
 }
-
 .logo_box {
   display: flex;
   align-items: center;
@@ -59,25 +58,44 @@ nav {
   margin-left: 1.5rem;
   position: relative;
 }
+.nav_links .link .mega_drop_menu {
+  position: fixed; 
+  top: 150px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  height: 450px;
+  background: #fff;
+  visibility: hidden;
+  opacity: 0;
+  transition: all .3s ease;
+}
+.nav_links .link:hover .mega_drop_menu {
+  top: 100px;
+  opacity: 1;
+  visibility: visible;
+}
 .nav_links .link .drop_menu {
   position: absolute;
   top: 55px;
   left: 0;
-  width:155px;
+  width:170px;
   background: #fff;
-  box-shadow: 0 1px 10px 0 rgba(0, 0, 0, .3);
+  box-shadow: 0px 1px 5px 0 rgba(0, 0, 0, .3);
+
   opacity: 0;
   visibility: hidden;
   transition: all .3s ease;
 }
 .nav_links .link:hover .drop_menu {
-  top: 33px;
+  top: 40px;
   opacity: 1;
   visibility: visible;
 }
 .nav_links .link .drop_menu a {
   display: block;
   padding: .5rem;
+  font-size: 1.2rem;
 }
 .nav_links .link .drop_menu a:hover {
   background: #000044;
@@ -85,6 +103,7 @@ nav {
 }
 .nav_links .link a {
   color: #424242;
+  font-size: 1.1rem;
   display: flex;
   align-items: center;
   column-gap: 10px;
@@ -92,6 +111,13 @@ nav {
 }
 .nav_links .link a:hover {
   color: red;
+}
+.nav_links .link:hover a i {
+  transform: translateY(2px);
+  transition: all .5s ease;
+}
+.nav_links .link:hover a i {
+  transform: translateY(-2px) ;
 }
 .nav_content_dn .menu-btn {
  

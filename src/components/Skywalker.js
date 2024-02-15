@@ -34,7 +34,7 @@ export const Skywalker = () => {
                 <div className="logo-box">
                   <i className="fa fa-snowflake"></i>
                   {/* <img src="" alt="skywalker_logo" /> */}
-                  <h1>SKYWALKER</h1>
+                  <h1 className="sky_title">SKYWALKER</h1>
                   <span>water never tasted so good...</span>
                 </div>
 

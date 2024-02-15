@@ -1,4 +1,4 @@
-import './Nav.css';
+import './Navbar.css';
 import { Link } from "react-router-dom";
 import { useState } from "react";
 
@@ -42,16 +42,40 @@ export const Navbar = () => {
                 <Link to="/">Home</Link>
               </li>
               <li className="link">
-                <Link to="/skywalker">Skywalker</Link>
+                <Link to="/skywalker">
+                  Skywalker
+                  <i className="fa fa-caret-down"></i>
+                </Link>
+                <div className="mega_drop_menu">
+
+                </div>
               </li>
               <li className="link">
-                <Link to="/gjr">Gjr</Link>
+                <Link to="/gjr">
+                  Gjr
+                  <i className="fa fa-caret-down"></i>
+                </Link>
+                <div className="mega_drop_menu">
+                  
+                </div>
               </li>
               <li className="link">
-                <Link to="/librex">Librex</Link>
+                <Link to="/librex">
+                  Librex
+                  <i className="fa fa-caret-down"></i>
+                </Link>
+                <div className="mega_drop_menu">
+                  
+                </div>
               </li>
               <li className="link">
-                <Link to="/fifthstar">Fifthstar</Link>
+                <Link to="/fifthstar">
+                  Fifthstar
+                  <i className="fa fa-caret-down"></i>
+                </Link>
+                <div className="mega_drop_menu">
+                  
+                </div>
               </li>
               <li className="link">
                 <Link to="/company">
@@ -100,7 +124,9 @@ export const Navbar = () => {
                 <Link to="/" onClick={closeMenu}>Home</Link>
               </li>
               <li className="link">
-                <Link to="/skywalker" onClick={closeMenu}>Skywalker</Link>
+                <Link to="/skywalker" onClick={closeMenu}>
+                  Skywalker
+                </Link>
               </li>
               <li className="link">
                 <Link to="/gjr" onClick={closeMenu}>Gjr</Link>

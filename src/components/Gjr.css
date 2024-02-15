@@ -3,13 +3,75 @@
 .gjr_nav_section {
   width: 100%;
   height: 250px;
-  background: red;
   font-family: 'Montserrat';
+  /* color: #111 !important */
 }
-.gjr_nav_content {
+.banners {
+  width: 100%;
+}
+.gjr_top_banner {
+  height: 50px;
+}
+.gjr_top_banner_content {
+  height: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   width: 80%;
   margin: auto;
 }
-.gjr_section .top_banner {
+.gjr_logo_box {
+  
+}
+.gjr_top_banner_content .gjr_contact  {
+  display: flex;
+  column-gap: 20px;
+  margin: 6px 0;
 
+}
+.gjr_top_banner_content .gjr_contact p {
+  color: #8d8d8d;
+}
+.gjr_top_banner_content .gjr_contact p:not(:last-child)  {
+  border-right: 2px solid #8d8d8d;
+  padding: 0 1rem;
+}
+.mid_banner_content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+.gjr_mid_banner_text .gjr_title{
+  font-size: 3rem;
+  font-weight: 800;
+}
+.gjr_mid_banner_text span {
+  color: #ac8420;
+}
+.gjr_mid_banner {
+  height: 100px;
+  background: #000044;
+}
+.gjr_mid_banner .mid_banner_content {
+  text-align: center;
+}
+.mid_banner_content .media {
+  display: flex;
+  column-gap: 1.5rem;;
+}
+.mid_banner_content .media a i {
+  font-size: 1.3rem;
+  color: #fff;
+}
+
+@media screen and (max-width: 940px) {
+  .gjr_top_banner_content {
+    width: 100%;
+    padding: 0 1.5rem;
+  }
+  .gjr_mid_banner .mid_banner_content {
+    width: 100%;
+    padding: 0 1.5rem;
+  }
 }
