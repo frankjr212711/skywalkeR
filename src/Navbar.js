@@ -109,7 +109,7 @@ export const Navbar = () => {
                 <Link to="/librex" onClick={closeMenu}>Librex</Link>
               </li>
               <li className="link">
-                <Link to="/fifth" onClick={closeMenu}>5thStar</Link>
+                <Link to="/fifthstar" onClick={closeMenu}>5thStar</Link>
               </li>
             </ul>
           </div>
