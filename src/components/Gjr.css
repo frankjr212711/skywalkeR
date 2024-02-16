@@ -22,9 +22,6 @@
   width: 80%;
   margin: auto;
 }
-.gjr_logo_box {
-  
-}
 .gjr_top_banner_content .gjr_contact  {
   display: flex;
   column-gap: 20px;
@@ -62,27 +59,49 @@
 .gjr_mid_banner .mid_banner_content {
   text-align: center;
 }
-.mid_banner_content .gjr_nav_links {
-  display: flex;
-  column-gap: 1.5rem;
+.gjr_nav_links ul li {
+  display: inline-block;
+  margin-left: 1.5rem;
 }
-.mid_banner_content .gjr_nav_links a {
+ .gjr_nav_links ul li a {
   color: rgb(255, 255, 255);
+  display: inline-flex;
+  align-items: center;
+  column-gap: 10px;
+}
+.gjr_nav_links ul li {
   position: relative;
 }
-.mid_banner_content .gjr_nav_links a::before {
+.gjr_nav_links ul li:not(:last-child):before {
   content: '';
   position: absolute;
   bottom: -10px;
   left: 0;
-  width: 0%;
+  width: 0;
   height: 3px;
   background: rgb(255, 255, 255);
   transition: all .3s ease;
-
 }
-.mid_banner_content .gjr_nav_links a:hover::before {
+.mid_banner_content .gjr_nav_links ul li:hover::before {
   width: 100%;
+}
+
+.gjr_nav_links ul li .gjr_compay_drop {
+  position: absolute;
+  top: 200%;
+  left: 0;
+  width: 200px;
+  height: 200px;
+  background: rgb(255, 255, 255);
+  box-shadow: 0px 1px 5px 0 rgba(0, 0, 0, .3);
+  transition: all .3s ease;
+  visibility: hidden;
+  opacity: 0;
+}
+.gjr_nav_links ul li:hover .gjr_compay_drop {
+  top: 130%;
+  visibility: visible;
+  opacity: 1;
 }
 
 @media screen and (max-width: 940px) {

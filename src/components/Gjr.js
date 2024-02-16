@@ -56,22 +56,39 @@ export const Gjr = () => {
                 G<span>J</span>R COMPANY LIMITED</h1>
             </div>
 
-            <div className="gjr_nav_links">
-                <Link to="">
+              <div className="gjr_nav_links">
+                <ul>
+                  <li>
+                  <Link to="">
                   {/* <i className="fa-brands fa-facebook-f"></i> */}
                   Kitchens
                 </Link>
-                <Link to="">
+                  </li>
+                  <li>
+                  <Link to="">
                   {/* <i className="fa-brands fa-instagram"></i> */}
                   Wardrobes
                 </Link>
-                <Link to="">
+                  </li>
+                  <li>
+                  <Link to="">
                   {/* <i className="fa-brands fa-twitter"></i> */}
                   TV Units
                 </Link>
-                <Link to="">
-                  {/* <i className="fa-brands fa-tiktok"></i> */}
-                </Link>
+                  </li>
+                  <li>
+                  <Link to="" className='gjr_comp_link'>
+                  Company
+                  <i className="fa fa-caret-down"></i>
+                    </Link>
+                    <div className="gjr_compay_drop"></div>
+                  </li>
+                </ul>
+             
+            
+                
+              
+
             </div>
           </div>
         </div>
