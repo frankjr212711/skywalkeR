@@ -77,11 +77,14 @@ export const Gjr = () => {
                 </Link>
                   </li>
                   <li>
-                  <Link to="" className='gjr_comp_link'>
-                  Company
-                  <i className="fa fa-caret-down"></i>
+                    <Link to="" className='gjr_comp_link'>
+                      Get Quote
+                  {/* Company */}
+                  {/* <i className="fa fa-caret-down"></i> */}
                     </Link>
-                    <div className="gjr_compay_drop"></div>
+                    {/* <div className="gjr_company_drop">
+                      <Link className='gjr_company_drop_link'>Construction</Link>
+                    </div> */}
                   </li>
                 </ul>
              
