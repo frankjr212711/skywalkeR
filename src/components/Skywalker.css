@@ -80,6 +80,11 @@
   display: flex;
   align-items: center;
   column-gap: 1rem;
+  letter-spacing: 1px;
+}
+.mid_banner_content .info div:not(:last-child) {
+  border-right: 1px solid #8d8d8d;
+  padding: 0 1rem 0 .5rem
 }
 .mid_banner_content .info span {
   margin-left: .5rem;
@@ -111,6 +116,34 @@
 }
 .third_banner_content .nav ul li {
   display: inline-block;
+  position: relative;
+}
+.third_banner_content .nav ul li .mega_drop_menu {
+  width: 75%;
+  height: 400px;
+  position: fixed;
+  top: 300px;
+  background: #000044;
+  opacity: 0;
+  visibility: hidden;
+  transition: all .3s ease;
+}
+.third_banner_content .nav ul li .mega_drop_menu_more {
+  width: 205px;
+  height: 200px;
+  position: fixed;
+  top: 300px;
+  background: #000044;
+  opacity: 0;
+  visibility: hidden;
+  transition: all .3s ease;
+}
+.third_banner_content .nav ul li:hover .mega_drop_menu,
+.third_banner_content .nav ul li:hover .mega_drop_menu_more
+ {
+  top: 270px;
+  opacity: 1;
+  visibility: visible;
 }
 .third_banner_content .nav ul li a {
   height: 50px;
@@ -233,6 +266,10 @@
 
   /* SKYWALKER */
   .top_banner_content { 
+    width: 100%;
+    padding: 0 1.5rem;
+  }
+  .mid_banner_content {
     width: 100%;
     padding: 0 1.5rem;
   }

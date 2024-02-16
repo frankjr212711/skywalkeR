@@ -29,8 +29,12 @@
   margin: 6px 0;
 
 }
-.gjr_top_banner_content .gjr_contact p {
+.gjr_top_banner_content .gjr_contact p span {
   color: #8d8d8d;
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+  letter-spacing: 2px;
 }
 .gjr_top_banner_content .gjr_contact p:not(:last-child)  {
   border-right: 2px solid #8d8d8d;
@@ -43,7 +47,7 @@
   color: #fff;
 }
 .gjr_mid_banner_text .gjr_title{
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: 800;
 }
 .gjr_mid_banner_text span {

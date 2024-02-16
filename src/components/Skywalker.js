@@ -1,14 +1,13 @@
 import { Link } from "react-router-dom";
 import { Hero } from "../Hero";
-import './Skywalker.css';
+import "./Skywalker.css";
 
 const slides = [
-  {url: 'images/sky-img-01.jpg', title: 'sky_img_01'},
-  {url: 'images/sky-img-02.jpg', title: 'sky_img_02'},
-  {url: 'images/sky-img-03.jpg', title: 'sky_img_03'},
-  {url: 'images/sky-img-04.jpg', title: 'sky_img_04'}
-]
-
+  { url: "images/sky-img-01.jpg", title: "sky_img_01" },
+  { url: "images/sky-img-02.jpg", title: "sky_img_02" },
+  { url: "images/sky-img-03.jpg", title: "sky_img_03" },
+  { url: "images/sky-img-04.jpg", title: "sky_img_04" },
+];
 
 export const Skywalker = () => {
   return (
@@ -40,18 +39,19 @@ export const Skywalker = () => {
 
                 <div className="info">
                   <div className="email">
-                    <i className="fa fa-envelope"></i>
-                    <span>EMAIL</span>
+                    <Link to="mailto:info@skywalkerghana.com">
+                      <i className="fa fa-envelope"></i>
+                      <span>EMAIL</span>
+                    </Link>
                   </div>
-
                   <div className="hours">
                     <i className="fa fa-clock"></i>
-                    <span>09:00 - 17:00</span>
+                    <span>09:00 am - 5:00 pm | Mon - Fri</span>
                   </div>
 
                   <div className="phone">
                     <i className="fa fa-phone"></i>
-                    <span>+233 245 855 385</span>
+                    <span>+233 593 063 919</span>
                   </div>
                 </div>
               </div>
@@ -65,12 +65,15 @@ export const Skywalker = () => {
                         WATERS
                         <i className="fa fa-caret-down"></i>
                       </Link>
+                      <div className="mega_drop_menu"></div>
                     </li>
                     <li>
                       <Link to="#">
                         MORE INFORMATION
                         <i className="fa fa-caret-down"></i>
                       </Link>
+                      <div className="mega_drop_menu_more"></div>
+
                     </li>
                   </ul>
                 </div>
@@ -79,7 +82,7 @@ export const Skywalker = () => {
           </div>
         </div>
 
-        <Hero slides={ slides} />
+        <Hero slides={slides} />
 
         <div className="category__section">
           <div className="category_content">

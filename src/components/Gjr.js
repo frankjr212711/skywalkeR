@@ -16,10 +16,13 @@ export const Gjr = () => {
         
         <div className="gjr_top_banner">
           <div className="gjr_top_banner_content">
+            <Link to="/gjr">
             <div className="gjr_logo_box">
               {/* <img src="" alt="" /> */}
               <h1>LOGO</h1>
             </div>
+            </Link>
+           
             {/* <div className="text">
               <h1>top banner</h1>
             </div> */}
@@ -34,7 +37,7 @@ export const Gjr = () => {
               <p>
                 <span>
                   <i className="fa fa-phone"></i>
-                  +233 244 250 280 || 0209 915 946
+                  +233 244 250 280 | +233 209 915 946
                 </span>
               </p> 
               
@@ -51,10 +54,10 @@ export const Gjr = () => {
             </div>
 
             <div className="media">
-            <Link><i className="fa-brands fa-facebook-f"></i> </Link>
-            <Link><i className="fa-brands fa-instagram"></i> </Link>
-            <Link><i className="fa-brands fa-twitter"></i> </Link>
-            <Link><i className="fa-brands fa-tiktok"></i> </Link>
+            <Link to="https://www.facebook.com"><i className="fa-brands fa-facebook-f"></i> </Link>
+            <Link to="https://www.instagram.com"><i className="fa-brands fa-instagram"></i> </Link>
+            <Link to="https://wwww.twitter.com"><i className="fa-brands fa-twitter"></i> </Link>
+            <Link to="https://www.tiktok.com"><i className="fa-brands fa-tiktok"></i> </Link>
             </div>
           </div>
         </div>
