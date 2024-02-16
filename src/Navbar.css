@@ -98,7 +98,7 @@ nav {
 }
 .nav_links .link .drop_menu a:hover {
   background: #000044;
-  background: deepskyblue;
+  /* background: deepskyblue; */
   color: #fff;
 }
 .nav_links .link a {

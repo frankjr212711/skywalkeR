@@ -22,17 +22,19 @@ export const Gjr = () => {
               <h1>LOGO</h1>
             </div>
             </Link>
-           
             {/* <div className="text">
               <h1>top banner</h1>
             </div> */}
            
             <div className="gjr_contact">
-            <p>
+              
+              <p>
+                <Link to="mailto:info@gjrghana.com">
                 <span>
                   <i className="fa fa-envelope"></i>
                   info@gjrghana.com
                 </span>
+                </Link>
               </p>   
               <p>
                 <span>
