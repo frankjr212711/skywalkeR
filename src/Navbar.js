@@ -1,16 +1,14 @@
-import './Navbar.css';
+import "./Navbar.css";
 import { Link } from "react-router-dom";
 import { useState } from "react";
-
-
 
 export const Navbar = () => {
   const [open, setOpen] = useState(false);
   const [click, setClick] = useState(true);
 
   const closeMenu = () => {
-    setOpen(false)
-  }
+    setOpen(false);
+  };
   return (
     <nav>
       <div className="nav_content_tp">
@@ -46,46 +44,44 @@ export const Navbar = () => {
                   Skywalker
                   <i className="fa fa-caret-down"></i>
                 </Link>
-                <div className="mega_drop_menu">
-
-                </div>
+                {/* <div className="mega_drop_menu"></div> */}
               </li>
               <li className="link">
                 <Link to="/gjr">
                   Gjr
                   <i className="fa fa-caret-down"></i>
                 </Link>
-                <div className="mega_drop_menu">
-                  
-                </div>
+                <div className="mega_drop_menu"></div>
               </li>
               <li className="link">
                 <Link to="/librex">
                   Librex
                   <i className="fa fa-caret-down"></i>
                 </Link>
-                <div className="mega_drop_menu">
-                  
-                </div>
+                {/* <div className="mega_drop_menu"></div> */}
               </li>
               <li className="link">
                 <Link to="/fifthstar">
                   Fifthstar
                   <i className="fa fa-caret-down"></i>
                 </Link>
-                <div className="mega_drop_menu">
-                  
-                </div>
+                {/* <div className="mega_drop_menu"></div> */}
               </li>
               <li className="link">
-                <Link to="/company" className='drop_link'>
+                <Link to="/company" className="drop_link">
                   Company
                   <i className="fa fa-caret-down"></i>
                 </Link>
                 <div className="drop_menu">
-                  <Link to="/about" className='drop_link'>About Us</Link>
-                  <Link to="/contact" className='drop_link'>Contact</Link>
-                  <Link to="/careers" className='drop_link'>Careers</Link>
+                  <Link to="/about" className="drop_link">
+                    About Us
+                  </Link>
+                  <Link to="/contact" className="drop_link">
+                    Contact
+                  </Link>
+                  <Link to="/careers" className="drop_link">
+                    Careers
+                  </Link>
                 </div>
               </li>
             </ul>
@@ -99,8 +95,6 @@ export const Navbar = () => {
         </div>
       </div>
 
-
-
       <div
         className={open ? "res_nav_content_dn active" : "res_nav_content_dn "}
       >
@@ -108,7 +102,7 @@ export const Navbar = () => {
           <header>
             <Link to="/">
               <div className="logo_box">
-              <h3>All-in-One</h3>
+                <h3>All-in-One</h3>
                 {/* <i className="fab fa-typo3"></i> */}
               </div>
             </Link>
@@ -118,10 +112,12 @@ export const Navbar = () => {
             </div>
           </header>
 
-          <div className={open ? "nav_links_ active" : 'nav_links_'}>
+          <div className={open ? "nav_links_ active" : "nav_links_"}>
             <ul>
               <li className="link">
-                <Link to="/" onClick={closeMenu}>Home</Link>
+                <Link to="/" onClick={closeMenu}>
+                  Home
+                </Link>
               </li>
               <li className="link">
                 <Link to="/skywalker" onClick={closeMenu}>
@@ -129,17 +125,22 @@ export const Navbar = () => {
                 </Link>
               </li>
               <li className="link">
-                <Link to="/gjr" onClick={closeMenu}>Gjr</Link>
+                <Link to="/gjr" onClick={closeMenu}>
+                  Gjr
+                </Link>
               </li>
               <li className="link">
-                <Link to="/librex" onClick={closeMenu}>Librex</Link>
+                <Link to="/librex" onClick={closeMenu}>
+                  Librex
+                </Link>
               </li>
               <li className="link">
-                <Link to="/fifthstar" onClick={closeMenu}>5thStar</Link>
+                <Link to="/fifthstar" onClick={closeMenu}>
+                  5thStar
+                </Link>
               </li>
             </ul>
           </div>
-
         </div>
       </div>
     </nav>
