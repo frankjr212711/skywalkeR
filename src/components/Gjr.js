@@ -11,6 +11,7 @@ const slides = [
 
 export const Gjr = () => {
   return (
+    <>
     <div className="gjr_nav_section">
       <div className="gjr_banners">
         
@@ -55,11 +56,22 @@ export const Gjr = () => {
                 G<span>J</span>R COMPANY LIMITED</h1>
             </div>
 
-            <div className="media">
-            <Link to="https://www.facebook.com"><i className="fa-brands fa-facebook-f"></i> </Link>
-            <Link to="https://www.instagram.com"><i className="fa-brands fa-instagram"></i> </Link>
-            <Link to="https://wwww.twitter.com"><i className="fa-brands fa-twitter"></i> </Link>
-            <Link to="https://www.tiktok.com"><i className="fa-brands fa-tiktok"></i> </Link>
+            <div className="gjr_nav_links">
+                <Link to="">
+                  {/* <i className="fa-brands fa-facebook-f"></i> */}
+                  Kitchens
+                </Link>
+                <Link to="">
+                  {/* <i className="fa-brands fa-instagram"></i> */}
+                  Wardrobes
+                </Link>
+                <Link to="">
+                  {/* <i className="fa-brands fa-twitter"></i> */}
+                  TV Units
+                </Link>
+                <Link to="">
+                  {/* <i className="fa-brands fa-tiktok"></i> */}
+                </Link>
             </div>
           </div>
         </div>
@@ -67,5 +79,22 @@ export const Gjr = () => {
 
       <Hero slides={slides} />
     </div>
+
+    <div className="gjr_category">
+        <div className="cat_container">
+          <div className="cat_content">
+            <div className="cat_item">
+              <i className="fa fa-kitchen"></i>
+            Fitted Kitchens
+            </div>
+            <div className="cat_item"></div>
+            <div className="cat_item"></div>
+            <div className="cat_item"></div>
+          </div>
+        </div>
+    </div>
+
+    </>
+    
   );
 };

@@ -78,14 +78,14 @@ export const Navbar = () => {
                 </div>
               </li>
               <li className="link">
-                <Link to="/company">
+                <Link to="/company" className='drop_link'>
                   Company
                   <i className="fa fa-caret-down"></i>
                 </Link>
                 <div className="drop_menu">
-                  <Link to="/about">About Us</Link>
-                  <Link to="/contact">Contact</Link>
-                  <Link to="/careers">Careers</Link>
+                  <Link to="/about" className='drop_link'>About Us</Link>
+                  <Link to="/contact" className='drop_link'>Contact</Link>
+                  <Link to="/careers" className='drop_link'>Careers</Link>
                 </div>
               </li>
             </ul>
