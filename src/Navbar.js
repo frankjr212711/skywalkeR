@@ -37,7 +37,7 @@ export const Navbar = () => {
           <div className="nav_links">
             <ul>
               <li className="link">
-                <Link to="/">Home</Link>
+                <Link to="/about">Why Us?</Link>
               </li>
               <li className="link">
                 <Link to="/skywalker">
