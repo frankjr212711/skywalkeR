@@ -7,7 +7,7 @@ export const Hero = ({ slides }) => {
   const heroStyles = {
     width: '100%',
     height: '749px',
-    margin: '3px auto 1rem auto',
+    margin: '210px auto 1rem auto',
     position: 'relative',
     background: 'rgb(255, 255, 255)'
   }

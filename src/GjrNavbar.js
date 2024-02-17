@@ -1,5 +1,6 @@
 import { Hero } from "./Hero";
 import { Link } from "react-router-dom";
+import './GjrNavbar.css';
 
 const slides = [
   { url: "images/gjr-img-01.jpg", title: "sky_img_01" },
@@ -11,9 +12,9 @@ const slides = [
 export const GjrNavbar = () => {
   return (
     <>
-      <div className="gjr_nav_section">
+    <div className="gjr_section">
         
-        <div className="content">
+        <div className="nav_content">
           
           <div className="gjr_banners">
             <div className="gjr_top_banner">
@@ -26,18 +27,21 @@ export const GjrNavbar = () => {
                 </Link>
                 <div className="gjr_contact">
                   <p>
-                    <Link to="mailto:info@gjrghana.com">
+                    <Link to="mailto:info@gjrghana.com" target="self">
                       <span>
-                        <i className="fa fa-envelope"></i>
+                        <i className="fa fa-envelope" ></i>
                         info@gjrghana.com
                       </span>
                     </Link>
                   </p>
                   <p>
+                    <Link to='tel:002330244250280' target="self">
                     <span>
                       <i className="fa fa-phone"></i>
                       +233 244 250 280 | +233 209 915 946
                     </span>
+                    </Link>
+                  
                   </p>
                 </div>
               </div>
@@ -100,6 +104,456 @@ export const GjrNavbar = () => {
                         Fitted Wardrobes
                         <div className="fa fa-angle-down"></div>
                       </span>
+
+                      <div className="gjr_mega_drop_menu">
+                        <div className="mega_drop_menu_content">
+                          
+                          <div className="card">
+                            
+                            <div className="card_img_box">
+                              <img src="images/gjr-img-02.jpg" alt="" />
+                            </div>
+
+                            <div className="card_title">
+                              <h3>ALL RANGES</h3>
+                            </div>
+
+                            <div className="specs">
+                              <a href="">Styles</a>
+                              <a href="">Handles</a>
+                            </div>
+                          </div>
+
+
+                        <div className="card">
+                            
+                            <div className="card_img_box">
+                              <img src="images/gjr-img-01.jpg" alt="" />
+                            </div>
+
+                            <div className="card_title">
+                              <h3>WALK-IN WARDROBES</h3>
+                            </div>
+                            
+                            <div className="specs">
+                              <a href="">Finishes</a>
+                              <a href="">Headboards</a>
+                            </div>
+                          </div>
+
+                          <div className="card">
+                            
+                            <div className="card_img_box">
+                              <img src="images/gjr-img-03.jpg" alt="" />
+                            </div>
+
+                            <div className="card_title">
+                              <h3>WARDROBE INTERIORS</h3>
+                            </div>
+                            
+                            <div className="specs">
+                              <a href="">Colours</a>
+                              <a href="">Mirrors</a>
+                            </div>
+                          </div>
+
+
+                          <div className="card">
+                            
+                            <div className="card_img_box">
+                              <img src="images/gjr-img-03.jpg" alt="" />
+                            </div>
+
+                            <div className="card_title">
+                              <h3>CLEVER STORAGE</h3>
+                            </div>
+                            
+                            <div className="specs">
+                              <a href="">Matching Bedroom Wardrobes</a>
+                              <a href="">Stools</a>
+                            </div>
+                          </div>
+
+
+                        </div>
+                      </div>
+                      
+                    </li>
+                    <li>
+                      <span>
+                      Sliding Wardrobes
+                      <div className="fa fa-angle-down"></div>
+                      </span>
+                      <div className="gjr_mega_drop_menu">
+                        <div className="mega_drop_menu_content">
+                          
+                        <div className="card">
+                            <div className="card_img_box">
+                              <img src="images/gjr-img-02.jpg" alt="" />
+                            </div>
+
+                            <div className="card_title">
+                              <h3>ALL RANGES</h3>
+                            </div>
+                            
+                            <div className="specs">
+                              <a href="">Styles</a>
+                              <a href="">Handles</a>
+                            </div>
+
+                          </div>
+
+                          <div className="card">
+                            <div className="card_img_box">
+                              <img src="images/gjr-img-01.jpg" alt="" />
+                            </div>
+
+                            <div className="card_title">
+                              <h3>ALL RANGES</h3>
+                            </div>
+                            
+                            <div className="specs">
+                              <a href="">Styles</a>
+                              <a href="">Handles</a>
+                            </div>
+                            
+                          </div>
+
+                          <div className="card">
+                            <div className="card_img_box">
+                              <img src="images/gjr-img-02.jpg" alt="" />
+                            </div>
+
+                            <div className="card_title">
+                              <h3>ALL RANGES</h3>
+                            </div>
+                            
+                            <div className="specs">
+                              <a href="">Styles</a>
+                              <a href="">Handles</a>
+                            </div>
+                            
+                          </div>
+
+                          <div className="card">
+                            <div className="card_img_box">
+                              <img src="images/gjr-img-03.jpg" alt="" />
+                            </div>
+
+                            <div className="card_title">
+                              <h3>ALL RANGES</h3>
+                            </div>
+                            
+                            <div className="specs">
+                              <a href="">Styles</a>
+                              <a href="">Handles</a>
+                            </div>
+                            
+                          </div>
+
+
+
+                        </div>
+                      </div>
+                     
+                    </li>
+                    <li>
+                      <span>
+                      Home Office
+                      <div className="fa fa-angle-down"></div>
+                      </span>
+                      
+                      <div className="gjr_mega_drop_menu">
+                        <div className="mega_drop_menu_content">
+                          
+                        <div className="card">
+                            <div className="card_img_box">
+                              <img src="images/gjr-img-01.jpg" alt="" />
+                            </div>
+
+                            <div className="card_title">
+                              <h3>ALL RANGES</h3>
+                            </div>
+                            
+                            <div className="specs">
+                              <a href="">Styles</a>
+                              <a href="">Handles</a>
+                            </div>
+                          </div>
+
+                          <div className="card">
+                            <div className="card_img_box">
+                              <img src="images/gjr-img-03.jpg" alt="" />
+                            </div>
+
+                            <div className="card_title">
+                              <h3>ALL RANGES</h3>
+                            </div>
+                            
+                            <div className="specs">
+                              <a href="">Styles</a>
+                              <a href="">Handles</a>
+                            </div>
+                          </div>
+
+                          <div className="card">
+                            <div className="card_img_box">
+                              <img src="images/gjr-img-04.jpg" alt="" />
+                            </div>
+
+                            <div className="card_title">
+                              <h3>ALL RANGES</h3>
+                            </div>
+                            
+                            <div className="specs">
+                              <a href="">Styles</a>
+                              <a href="">Handles</a>
+                            </div>
+                          </div>
+
+                          <div className="card">
+                            <div className="card_img_box">
+                              <img src="images/gjr-img-03.jpg" alt="" />
+                            </div>
+
+                            <div className="card_title">
+                              <h3>ALL RANGES</h3>
+                            </div>
+                            
+                            <div className="specs">
+                              <a href="">Styles</a>
+                              <a href="">Handles</a>
+                            </div>
+                          </div>
+
+                        </div>
+                      </div>
+                      
+                    </li>
+                    <li>
+                      <span>
+                      Fitted Living
+                      <div className="fa fa-angle-down"></div>
+                      </span>
+                      <div className="gjr_mega_drop_menu">
+                        <div className="mega_drop_menu_content">
+                        <div className="card"> 
+                            <div className="card_img_box">
+                              <img src="images/gjr-img-01.jpg" alt="" />
+                            </div>
+
+                            <div className="card_title">
+                              <h3>ALL RANGES</h3>
+                            </div>
+                            
+                            <div className="specs">
+                              <a href="">Styles</a>
+                              <a href="">Handles</a>
+                            </div>
+                          </div>
+
+                          <div className="card"> 
+                            <div className="card_img_box">
+                              <img src="images/gjr-img-02.jpg" alt="" />
+                            </div>
+
+                            <div className="card_title">
+                              <h3>ALL RANGES</h3>
+                            </div>
+                            
+                            <div className="specs">
+                              <a href="">Styles</a>
+                              <a href="">Handles</a>
+                            </div>
+                          </div>
+
+                          <div className="card"> 
+                            <div className="card_img_box">
+                              <img src="images/gjr-img-04.jpg" alt="" />
+                            </div>
+
+                            <div className="card_title">
+                              <h3>ALL RANGES</h3>
+                            </div>
+                            
+                            <div className="specs">
+                              <a href="">Styles</a>
+                              <a href="">Handles</a>
+                            </div>
+                          </div>
+
+                          <div className="card"> 
+                            <div className="card_img_box">
+                              <img src="images/gjr-img-04.jpg" alt="" />
+                            </div>
+
+                            <div className="card_title">
+                              <h3>ALL RANGES</h3>
+                            </div>
+                            
+                            <div className="specs">
+                              <a href="">Styles</a>
+                              <a href="">Handles</a>
+                            </div>
+                          </div>
+
+                          
+                        </div>
+                      </div>
+                     
+                    </li>
+                    <li>
+                      <span>
+                      Understairs
+                      <div className="fa fa-angle-down"></div>
+                      </span>
+                      <div className="gjr_mega_drop_menu">
+                        <div className="mega_drop_menu_content">
+                        <div className="card">
+                            
+                            <div className="card_img_box">
+                              <img src="images/gjr-img-01.jpg" alt="" />
+                            </div>
+
+                            <div className="card_title">
+                              <h3>ALL RANGES</h3>
+                            </div>
+                            
+                            <div className="specs">
+                              <a href="">Styles</a>
+                              <a href="">Handles</a>
+                            </div>
+                          </div>
+
+                          <div className="card">
+                            
+                            <div className="card_img_box">
+                              <img src="images/gjr-img-03.jpg" alt="" />
+                            </div>
+
+                            <div className="card_title">
+                              <h3>ALL RANGES</h3>
+                            </div>
+                            
+                            <div className="specs">
+                              <a href="">Styles</a>
+                              <a href="">Handles</a>
+                            </div>
+                          </div>
+
+                          <div className="card">
+                            
+                            <div className="card_img_box">
+                              <img src="images/gjr-img-02.jpg" alt="" />
+                            </div>
+
+                            <div className="card_title">
+                              <h3>ALL RANGES</h3>
+                            </div>
+                            
+                            <div className="specs">
+                              <a href="">Styles</a>
+                              <a href="">Handles</a>
+                            </div>
+                          </div>
+
+                          <div className="card">
+                            
+                            <div className="card_img_box">
+                              <img src="images/gjr-img-04.jpg" alt="" />
+                            </div>
+
+                            <div className="card_title">
+                              <h3>ALL RANGES</h3>
+                            </div>
+                            
+                            <div className="specs">
+                              <a href="">Styles</a>
+                              <a href="">Handles</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                     
+                    </li>
+                    <li>
+                      <span>
+                      Awkward Spaces
+                      <div className="fa fa-angle-down"></div>
+                      </span>
+                      <div className="gjr_mega_drop_menu">
+                        <div className="mega_drop_menu_content">
+                        <div className="card">
+                            
+                            <div className="card_img_box">
+                              <img src="images/gjr-img-01.jpg" alt="" />
+                            </div>
+
+                            <div className="card_title">
+                              <h3>ALL RANGES</h3>
+                            </div>
+                            
+                            <div className="specs">
+                              <a href="">Styles</a>
+                              <a href="">Handles</a>
+                            </div>
+                          </div>
+
+                          <div className="card">
+                            
+                            <div className="card_img_box">
+                              <img src="images/gjr-img-03.jpg" alt="" />
+                            </div>
+
+                            <div className="card_title">
+                              <h3>ALL RANGES</h3>
+                            </div>
+                            
+                            <div className="specs">
+                              <a href="">Styles</a>
+                              <a href="">Handles</a>
+                            </div>
+                          </div>
+
+                          <div className="card">
+                            
+                            <div className="card_img_box">
+                              <img src="images/gjr-img-01.jpg" alt="" />
+                            </div>
+
+                            <div className="card_title">
+                              <h3>ALL RANGES</h3>
+                            </div>
+                            
+                            <div className="specs">
+                              <a href="">Styles</a>
+                              <a href="">Handles</a>
+                            </div>
+                          </div>
+
+                          <div className="card">
+                            
+                            <div className="card_img_box">
+                              <img src="images/gjr-img-03.jpg" alt="" />
+                            </div>
+
+                            <div className="card_title">
+                              <h3>ALL RANGES</h3>
+                            </div>
+                            
+                            <div className="specs">
+                              <a href="">Styles</a>
+                              <a href="">Handles</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    {/* <li>
+                      <span>
+                      Why GJR
+                      <div className="fa fa-angle-down"></div>
+                      </span>
                       <div className="gjr_mega_drop_menu">
                         <div className="mega_drop_menu_content">
                           <div className="card">
@@ -114,32 +568,7 @@ export const GjrNavbar = () => {
                           </div>
                         </div>
                       </div>
-                    </li>
-                    <li>
-                      Sliding Wardrobes
-                      <div className="fa fa-angle-down"></div>
-                    </li>
-                    <li>
-                      Home Office
-                      <div className="fa fa-angle-down"></div>
-                    </li>
-                    <li>
-                      Fitted Living
-                      <div className="fa fa-angle-down"></div>
-                    </li>
-                    <li>
-                      Understairs
-                      <div className="fa fa-angle-down"></div>
-                    </li>
-                    <li>
-                      Awkward Spaces
-                      <div className="fa fa-angle-down"></div>
-                    </li>
-                    <li>
-                      Why GJR
-                      <div className="fa fa-angle-down"></div>
-                      {/* <div className="gjr_mega_drop_menu"></div> */}
-                    </li>
+                    </li> */}
                   </ul>
                 </div>
               </div>
@@ -150,7 +579,7 @@ export const GjrNavbar = () => {
                 <ul>
                   <li>
                     <Link to="/book_visit">
-                      <h5>BOOK A FREE DESIGN VISIT</h5>
+                      <h5>BOOK A DESIGN VISIT</h5>
                     </Link>
                   </li>
                   <li>
@@ -168,7 +597,9 @@ export const GjrNavbar = () => {
 
         </div>
 
-        <Hero slides={slides} />
+       <Hero slides={slides}/>
+
+    
       </div>
     </>
   );

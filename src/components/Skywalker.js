@@ -15,12 +15,14 @@ export const Skywalker = () => {
   return (
     <>
       <div className="sky_section">
-        <div className="content">
+        
+
+        <div className="nav_content">
           <div className="sky_banners">
             <div className="top_banner">
               <div className="top_banner_content">
                 <div className="title">
-                  <h3>Quality Waters delivered accross Ghana</h3>
+                  <h3>Quality Waters delivered across Ghana</h3>
                 </div>
                 <div className="socials">
                   {/* <i className="fa fa-envelope"></i> */}

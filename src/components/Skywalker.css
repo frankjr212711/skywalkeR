@@ -9,11 +9,12 @@
   /* border: 1px solid red; */
 }
 
-.sky_section .content {
+.sky_section .nav_content {
   position: fixed;
   top: 100px;
   left: 0;
   width: 100%;
+  /* height: 200px; */
   z-index: 99;
 }
 /* TOP-BANNER */

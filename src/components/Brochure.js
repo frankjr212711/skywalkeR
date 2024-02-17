@@ -1,6 +1,8 @@
 import { GjrNav } from "../GjrNav"
 import '../book_brochure_visit.css';
 
+
+
 export const Brochure = () => {
   return (
     <>
