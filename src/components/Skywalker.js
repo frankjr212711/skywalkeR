@@ -1,6 +1,8 @@
 import { Link } from "react-router-dom";
 import { Hero } from "../Hero";
 import "./Skywalker.css";
+import { SwiperHero } from "../SwiperHero";
+
 
 const slides = [
   { url: "images/sky-img-01.jpg", title: "sky_img_01" },
@@ -21,10 +23,19 @@ export const Skywalker = () => {
                   <h3>Quality Waters delivered accross Ghana</h3>
                 </div>
                 <div className="socials">
-                  <i className="fa fa-envelope"></i>
-                  <i className="fa-brands fa-facebook-f"></i>
-                  <i className="fa-brands fa-twitter"></i>
-                  <i className="fa-brands fa-tiktok"></i>
+                  {/* <i className="fa fa-envelope"></i> */}
+                  <Link to="" data-tooltip="@skywalkerghana">
+                    <i className="fa-brands fa-facebook-f"></i>
+                  </Link>
+                  <Link to="" data-tooltip="@skywalkerghana">
+                    <i className="fa-brands fa-twitter"></i>
+                  </Link>
+                  <Link>
+                    <i className="fa-brands fa-tiktok"></i>
+                  </Link>
+                  
+                  
+                  
                 </div>
               </div>
             </div>
@@ -38,18 +49,18 @@ export const Skywalker = () => {
                 </div>
 
                 <div className="info">
-                  <div className="email">
+                  <div className="email" data-tooltip="info@skywalkerghana.com">
                     <Link to="mailto:info@skywalkerghana.com">
                       <i className="fa fa-envelope"></i>
                       <span>EMAIL</span>
                     </Link>
                   </div>
-                  <div className="hours">
+                  <div className="hours" data-tooltip="Mon - Fri Every Week">
                     <i className="fa fa-clock"></i>
-                    <span>09:00 am - 5:00 pm | Mon - Fri</span>
+                    <span>09:00 am - 5:00 pm</span>
                   </div>
 
-                  <div className="phone">
+                  <div className="phone" data-tooltip="CALL SALES">
                     <i className="fa fa-phone"></i>
                     <span>+233 593 063 919</span>
                   </div>
@@ -83,6 +94,12 @@ export const Skywalker = () => {
         </div>
 
         <Hero slides={slides} />
+        
+        {/* <SwiperHero slides={slides}/> */}
+        
+
+
+
 
         <div className="category__section">
           <div className="category_content">
@@ -110,28 +127,7 @@ export const Skywalker = () => {
                   <p className="item__post">CHANGE ON REQUEST</p>
                 </div>
               </div>
-
-              {/* <div className="item">
-                <div className="item__img_box">
-                  <div className="img_box">
-                    <img src="/images/sky-img-11.png" alt="" />
-                  </div>
-                </div>
-                <div className="info__box">
-                  <h5 className="item__desc">DISPENSER BOTTLES</h5>
-                  <p className="item__post">CHANGE ON REQUEST</p>
-                </div>
-              </div> */}
-
-              {/* <div className="item">
-          <div className="item__img_box">
-            image
-          </div>
-          <div className="info__box">
-            <h5 className="item__desc">22 ARTESIAN</h5>
-            <p className="item__post">2 PRODUCTS</p>
-          </div>
-        </div> */}
+       
             </div>
 
             <div className="notice__board_container">

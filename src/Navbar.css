@@ -9,6 +9,8 @@ nav {
   z-index: 999;
   background: #fff;
   font-family: 'Jost';
+
+  border: 1px solid red;
 }
 .nav_content_tp {
   width: 100%;

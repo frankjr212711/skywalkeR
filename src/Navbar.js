@@ -42,35 +42,35 @@ export const Navbar = () => {
               <li className="link">
                 <Link to="/skywalker">
                   Skywalker
-                  <i className="fa fa-caret-down"></i>
+                  {/* <i className="fa fa-caret-down"></i> */}
                 </Link>
                 {/* <div className="mega_drop_menu"></div> */}
               </li>
               <li className="link">
                 <Link to="/gjr">
                   Gjr
-                  <i className="fa fa-caret-down"></i>
+                  {/* <i className="fa fa-caret-down"></i> */}
                 </Link>
-                <div className="mega_drop_menu"></div>
+                {/* <div className="mega_drop_menu"></div> */}
               </li>
               <li className="link">
                 <Link to="/librex">
                   Librex
-                  <i className="fa fa-caret-down"></i>
+                  {/* <i className="fa fa-caret-down"></i> */}
                 </Link>
                 {/* <div className="mega_drop_menu"></div> */}
               </li>
               <li className="link">
                 <Link to="/fifthstar">
                   Fifthstar
-                  <i className="fa fa-caret-down"></i>
+                  {/* <i className="fa fa-caret-down"></i> */}
                 </Link>
                 {/* <div className="mega_drop_menu"></div> */}
               </li>
               <li className="link">
                 <Link to="/company" className="drop_link">
                   Company
-                  <i className="fa fa-caret-down"></i>
+                  {/* <i className="fa fa-caret-down"></i> */}
                 </Link>
                 <div className="drop_menu">
                   <Link to="/about" className="drop_link">

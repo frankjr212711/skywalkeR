@@ -7,8 +7,9 @@ export const Hero = ({ slides }) => {
   const heroStyles = {
     width: '100%',
     height: '749px',
-    margin: '200px auto 1rem auto',
-    position: 'relative'
+    margin: '3px auto 1rem auto',
+    position: 'relative',
+    background: 'rgb(255, 255, 255)'
   }
   const slideStyles = {
     width: '100%',
@@ -17,7 +18,6 @@ export const Hero = ({ slides }) => {
     backgroundSize: 'cover',
     backgroundImage: `url(${slides[current].url})`
   };
-
   const leftArrowStyles = {
     position: 'absolute',
     top: '50%',
@@ -48,7 +48,6 @@ export const Hero = ({ slides }) => {
     const newIndex = isLastSlide ? 0 : current + 1;
     setCurrent(newIndex)
   }
-
 
   return (
     <div style={heroStyles}>
