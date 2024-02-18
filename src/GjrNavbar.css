@@ -10,12 +10,12 @@
   left: 0px;
   width: 100%;
   /* height: 200px; */
-  z-index: 99;
+  z-index: 99; 
 }
-
 .gjr_top_banner {
   height: 50px;
   background: rgb(255, 255, 255);
+  margin-top: 0px;
 }
 .gjr_top_banner_content {
   height: inherit;
@@ -30,6 +30,31 @@
   column-gap: 20px;
   margin: 6px 0;
 }
+.gjr_top_banner_content .gjr_contact a {
+  position: relative;
+}
+.gjr_top_banner_content .gjr_contact a::before {
+  content: attr(data-tooltip);
+  position: absolute;
+  top: 51%;
+  /* transform: translateY(-50%) ; */
+  left: -150px;
+  width: inherit;
+  height: 100%;
+  padding: .1rem .35rem;
+  font-size: 12px;
+  background: #111;
+  color: rgb(255, 255, 255);
+  visibility: hidden;
+  opacity: 0;
+  z-index: 999; 
+  transition: .2s ease;
+}
+.gjr_top_banner_content .gjr_contact a:hover::before {
+  /* top: 00px; */
+  visibility: visible;
+  opacity: 1;
+}
 .gjr_top_banner_content .gjr_contact p span {
   color: #8d8d8d;
   display: flex;
@@ -41,7 +66,6 @@
   border-right: 2px solid #8d8d8d;
   padding: 0 1rem;
 }
-
 .mid_banner_content {
   display: flex;
   justify-content: center;
@@ -76,8 +100,8 @@
 .gjr_nav_links ul li a {
   position: relative;
 }
-.gjr_nav_links ul li a:before {
-  content: "";
+.gjr_nav_links ul li a::before {
+  content:   "";
   position: absolute;
   bottom: -10px;
   left: 0;
@@ -86,17 +110,7 @@
   background: rgb(255, 255, 255);
   transition: all 0.3s ease;
 }
-/* .gjr_nav_links ul li:not(:last-child):before {
-  content: '';
-  position: absolute;
-  bottom: -10px;
-  left: 0;
-  width: 0;
-  height: 3px;
-  background: rgb(255, 255, 255);
-  transition: all .3s ease;
-} */
-.mid_banner_content .gjr_nav_links ul li:hover::before {
+.gjr_nav_links ul li a:hover::before {
   width: 100%;
 }
 .gjr_third_banner {
@@ -179,10 +193,9 @@
 .gjr_fourth_banner .fourth_banner_content ul li a:hover::before {
   width: 100%;
 }
-
 .gjr_nav_items ul li .gjr_mega_drop_menu {
   position: fixed;
-  top: 280px;
+  top: 300px;
   left: 0;
   width: 100%;
   max-height: 460px;
@@ -225,7 +238,6 @@
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;
 }
-
 .gjr_mega_drop_menu .mega_drop_menu_content .card img {
   width: 100%;
   height: 100%;
@@ -252,7 +264,6 @@
   background: #ddd;
   /* background: #b6eee2; */
 }
-
 .mega_drop_menu_content .card .specs {
   /* border-top: 1px solid #eee; */
   padding: 0.5rem 0;

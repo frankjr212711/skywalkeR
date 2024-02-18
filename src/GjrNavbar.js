@@ -25,7 +25,7 @@ export const GjrNavbar = () => {
                 </Link>
                 <div className="gjr_contact">
                   <p>
-                    <Link to="mailto:info@gjrghana.com" target="self">
+                    <Link to="mailto:info@gjrghana.com" target="self" data-tooltip="Email: info@gjrghana.com">
                       <span>
                         <i className="fa fa-envelope"></i>
                         info@gjrghana.com
@@ -33,7 +33,7 @@ export const GjrNavbar = () => {
                     </Link>
                   </p>
                   <p>
-                    <Link to="tel:002330244250280" target="self">
+                    <Link to="tel:002330244250280" target="self" data-tooltip="Call +233 244 250 280">
                       <span>
                         <i className="fa fa-phone"></i>
                         +233 244 250 280 | +233 209 915 946
@@ -54,7 +54,7 @@ export const GjrNavbar = () => {
                 <div className="gjr_nav_links">
                   <ul>
                     <li>
-                      <Link to="/https://www.facebook.com">
+                      <Link to="/https://www.facebook.com" data-tooltip="@gjrkitchensghana">
                         <i className="fa-brands fa-facebook-f"></i>
                         {/* Kitchens */}
                       </Link>

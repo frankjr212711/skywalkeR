@@ -198,13 +198,15 @@
   display: inline-block;
   position: relative;
 }
-.third_banner_content .nav ul li .sky_mega_drop_menu {
-  width: 75%;
-  height: 460px;;
+.third_banner_content .nav ul li .mega_drop_menu {
+  width: 55%;
+  height: 350px;
   position: fixed;
   top: 300px;
   padding: 50px 0;
   background: #000044;
+  background:rgb(255, 255, 255);
+  box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.3);
   opacity: 0;
   visibility: hidden;
   transition: all 0.3s ease;
@@ -215,9 +217,8 @@
   margin: auto;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  /* gap: 10px; */
 }
-.sky_mega_drop_content .sky_item {
+.sky_mega_drop_content .item {
   border: 1px solid red;
 }
 .third_banner_content .nav ul li .mega_drop_menu_more {
@@ -227,8 +228,7 @@
   position: fixed;
   top: 300px;
   background: #000044;
-  background: rgb(255, 255, 255);
-
+  background: rgb(255,255,255);
   box-shadow: 0px 1px 5px 0 rgba(0, 0, 0, 0.3);
   opacity: 0;
   visibility: hidden;
@@ -237,15 +237,19 @@
 .third_banner_content .nav ul li .mega_drop_menu_more a {
   padding: .5rem ;
   width: 100%;
-  /* border-top: 1px solid rgba(0, 0, 0, .01); */
+  color: #111;
+  border-top: 1px solid rgba(0, 0, 0, .01);
 }
-.third_banner_content .nav ul li .mega_drop_menu_more a:hover {
-  /* background: deepskyblue; */
-  /* color:#ac8420; */
-  /* background: orangered; */
-  /* color: rgb(255, 255, 255); */
-  background: rgb(255, 255, 255);
-  color: #111
+
+  .third_banner_content .nav ul li .mega_drop_menu_more a:hover {
+    /* background: deepskyblue; */
+    /* color:#ac8420; */
+    /* background: orangered; */
+    /* color: rgb(255, 255, 255); */
+    background: rgb(255, 255, 255);
+    background: #000044;
+    /* background: deepskyblue; */
+    color: rgb(255, 255, 255);
 }
 .third_banner_content .nav ul li:hover .mega_drop_menu,
 .third_banner_content .nav ul li:hover .mega_drop_menu_more {
@@ -266,5 +270,4 @@
 .third_banner_content .nav ul li a:hover {
   background: #000044;
   color: #fff;
-
 }

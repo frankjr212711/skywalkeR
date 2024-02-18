@@ -121,10 +121,12 @@ nav {
   content: '';
   position: absolute;
   top: 105%;
-  left: 0;
+  left: 50%;
+  transform: translate(-50%, 50%);
   width: 0%;
   height: 2px;
   background:rgba(0, 0, 0, 0.3);
+  transition: .3s ease;
 }
 .nav_links .link a:hover::before {
   width: 100%;
