@@ -7,14 +7,12 @@
   /* color: #111; */
 }
 
-
 .about_content,
-.contact_content ,
-.careers_content { 
+.contact_content,
+.careers_content {
   width: 80%;
   margin: auto;
 }
-
 
 /* MAIN_CONTENT */
 .main_content {
@@ -22,11 +20,7 @@
   margin: 100px auto 0 auto;
 }
 
-
 /* RESPONSIVE  */
 
 @media screen and (max-width: 940px) {
-
-
-
 }

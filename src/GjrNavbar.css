@@ -1,14 +1,12 @@
 /* GJR */
 .gjr_section {
-  
   width: 100%;
   margin: auto;
   font-family: "Montserrat";
-
 }
 .gjr_section .nav_content {
   position: fixed;
-  top:100px;
+  top: 100px;
   left: 0px;
   width: 100%;
   /* height: 200px; */
@@ -73,12 +71,12 @@
   display: inline-flex;
   align-items: center;
   column-gap: 10px;
-  font-size: 1.2rem;;
+  font-size: 1.2rem;
 }
-.gjr_nav_links ul li {
+.gjr_nav_links ul li a {
   position: relative;
 }
-.gjr_nav_links ul li:before {
+.gjr_nav_links ul li a:before {
   content: "";
   position: absolute;
   bottom: -10px;
@@ -105,6 +103,8 @@
   width: 100%;
   height: 60px;
   background: #111;
+  /* background: #b6ccc2; */
+  /* background: #b6ddd2; */
   /* background: #9dad98; */
   border-top: 8px solid #ac8420;
   /* border-bottom: 1px solid rgb(255, 255, 255); */
@@ -113,9 +113,9 @@
 .gjr_third_banner .gjr_third_banner_content {
   width: 80%;
   height: 100%;
-  margin: auto; 
+  margin: auto;
 }
-.third_banner_content .gjr_nav_items  {
+.third_banner_content .gjr_nav_items {
   width: 100%;
   height: 100%;
 }
@@ -123,7 +123,7 @@
   height: 100%;
   display: flex;
   align-items: center;
-  justify-content: space-between;;
+  justify-content: space-between;
 }
 .gjr_nav_items ul li span {
   display: flex;
@@ -138,11 +138,15 @@
   width: 100%;
   height: 50px;
   background: #f9f9f9;
+  background: #fff;
+  /* background: #b6ccc2; */
+  /* background: #b6eee2; */
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.3);
 }
-.gjr_fourth_banner  .fourth_banner_content {
-  height: 100%;;
+.gjr_fourth_banner .fourth_banner_content {
+  height: 100%;
 }
- .gjr_fourth_banner .fourth_banner_content ul {
+.gjr_fourth_banner .fourth_banner_content ul {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
@@ -152,17 +156,17 @@
   text-align: center;
 }
 .gjr_fourth_banner .fourth_banner_content ul li:not(:last-child) {
-  border-right: 1px solid #bbb;
+  border-right: 1px solid #111;
 }
 .gjr_fourth_banner .fourth_banner_content ul li a {
   width: 100%;
   height: 100%;
   color: #111;
-  padding: .5rem 0;
+  padding: 0.5rem 0;
   position: relative;
 }
 .gjr_fourth_banner .fourth_banner_content ul li a::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 150%;
   left: 0%;
@@ -170,38 +174,35 @@
   width: 0;
   height: 2px;
   background: #424242;
-  transition: all .3s ease;
+  transition: all 0.3s ease;
 }
 .gjr_fourth_banner .fourth_banner_content ul li a:hover::before {
   width: 100%;
 }
 
-
-
-
-.gjr_nav_items ul li .gjr_mega_drop_menu  {
+.gjr_nav_items ul li .gjr_mega_drop_menu {
   position: fixed;
   top: 280px;
   left: 0;
   width: 100%;
-  max-height: 480px; 
+  max-height: 460px;
   margin: auto;
   padding: 40px 1rem;
   background: rgb(255, 255, 255);
-  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, .3);
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.3);
   color: #111;
   z-index: 888;
   opacity: 0;
   visibility: hidden;
-  transition: all .3s ease;
-  font-family: 'Jost';
+  transition: all 0.3s ease;
+  font-family: "Jost";
   /* border: 1px solid red; */
 }
-.gjr_nav_items ul li  {
+.gjr_nav_items ul li {
   position: relative;
 }
 .gjr_nav_items ul li:hover::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 115%;
   left: 0;
@@ -209,11 +210,10 @@
   height: 2px;
   background: rgba(255, 255, 255);
 }
-.gjr_nav_items ul li:hover .gjr_mega_drop_menu  {
+.gjr_nav_items ul li:hover .gjr_mega_drop_menu {
   top: 280px;
   opacity: 1;
   visibility: visible;
-
 }
 .gjr_mega_drop_menu .mega_drop_menu_content {
   width: 100%;
@@ -229,7 +229,6 @@
 .gjr_mega_drop_menu .mega_drop_menu_content .card img {
   width: 100%;
   height: 100%;
-
 }
 .mega_drop_menu_content .card .card_img_box {
   display: flex;
@@ -240,36 +239,35 @@
 .mega_drop_menu_content .card .card_title {
   font-weight: 500;
   display: inline;
-  padding: .5rem 0;
+  padding: 0.5rem 0;
   position: relative;
-} 
+}
 .mega_drop_menu_content .card .card_title::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 105%;
   left: 0;
   width: 100%;
   height: 2px;
   background: #ddd;
-
+  /* background: #b6eee2; */
 }
 
 .mega_drop_menu_content .card .specs {
   /* border-top: 1px solid #eee; */
-  padding: .5rem 0;
+  padding: 0.5rem 0;
 }
 .mega_drop_menu_content .card .specs a {
   display: block;
   width: 100%;
-  padding: .5rem 1rem;
+  padding: 0.5rem 1rem;
   margin: 8px 0;
   color: #111;
   font-weight: 600;
   background: #b6ccc2;
-  transition: .3s ease;
+  /* background: #b6eee2; */
+  transition: 0.3s ease;
 }
 .mega_drop_menu_content .card .specs a:hover {
-  background: #b6ddd2
-
+  background: #b6ddd2;
 }
-

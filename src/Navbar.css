@@ -1,20 +1,19 @@
-
 nav {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, .3);
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.3);
   z-index: 999;
   background: #fff;
-  font-family: 'Jost';
+  font-family: "Jost";
 }
 .nav_content_tp {
   width: 100%;
   height: 50px;
   /* background: red; */
   border-bottom: 1px solid #f9f9f9;
-} 
+}
 .nav_content_tp .content {
   width: 80%;
   height: inherit;
@@ -28,7 +27,6 @@ nav {
   align-items: center;
   column-gap: 10px;
   font-size: 14px;
-
 }
 .nav_content_tp .mail {
   display: flex;
@@ -38,9 +36,8 @@ nav {
 .nav_content_dn {
   width: 100%;
   height: 50px;
-  
-  /* background: rgb(157, 173, 152); */
 
+  /* background: rgb(157, 173, 152); */
 }
 .nav_content_dn .content {
   width: 80%;
@@ -61,7 +58,7 @@ nav {
   position: relative;
 }
 .nav_links .link .mega_drop_menu {
-  position: fixed; 
+  position: fixed;
   top: 150px;
   left: 50%;
   transform: translateX(-50%);
@@ -71,7 +68,7 @@ nav {
 
   visibility: hidden;
   opacity: 0;
-  transition: all .3s ease;
+  transition: all 0.3s ease;
 }
 .nav_links .link:hover .mega_drop_menu {
   top: 100px;
@@ -82,12 +79,12 @@ nav {
   position: absolute;
   top: 55px;
   left: -50px;
-  width:200px;
+  width: 200px;
   background: #fff;
-  box-shadow: 0px 1px 5px 0 rgba(0, 0, 0, .3);
+  box-shadow: 0px 1px 5px 0 rgba(0, 0, 0, 0.3);
   opacity: 0;
   visibility: hidden;
-  transition: all .3s ease;
+  transition: all 0.3s ease;
 }
 .nav_links .link:hover .drop_menu {
   top: 40px;
@@ -96,44 +93,56 @@ nav {
 }
 .nav_links .link .drop_menu a.drop_link {
   display: block;
-  padding: .5rem;
+  padding: 0.5rem;
   font-size: 1.2rem;
-  color: #111;
+  position: relative;
+}
+.nav_links .link .drop_menu a.drop_link::before {
+  content: '';
+  height: 0;
+  border: 0;
 }
 .nav_links .link .drop_menu a:hover {
   background: #000044;
   /* background: deepskyblue; */
   color: #fff;
+  
 }
 .nav_links .link a {
-
   font-size: 1.1rem;
   display: flex;
   align-items: center;
   column-gap: 10px;
-  transition: .3s ease;
+  transition: 0.3s ease;
   color: #111;
+  position: relative;
 }
-.nav_links .link a:hover {
-  /* color: deepskyblue; */
-  transform: scale(1.01)
+.nav_links .link a::before {
+  content: '';
+  position: absolute;
+  top: 105%;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background:rgba(0, 0, 0, 0.3);
+}
+.nav_links .link a:hover::before {
+  width: 100%;
 }
 .nav_links .link:hover a i {
   transform: translateY(2px);
-  transition: all .5s ease;
+  transition: all 0.5s ease;
 }
 .nav_links .link:hover a i {
-  transition: all .5s ease;
-  transform: translateY(-2px) ;
+  transition: all 0.5s ease;
+  transform: translateY(-2px);
 }
 .nav_content_dn .menu-btn {
- 
   display: none;
 }
 .res_nav_content_dn {
   display: none;
 }
-
 
 @media screen and (max-width: 940px) {
   .nav_links {
@@ -163,10 +172,10 @@ nav {
     top: 50%;
     left: 50%;
     transform: translate(-0%, -50%);
-    width:15px;
+    width: 15px;
     height: 3px;
     background: #424242;
-    transition: all .3s ease;
+    transition: all 0.3s ease;
     display: inline-block;
   }
   .nav_content_dn .menu-btn span:nth-child(1) {
@@ -177,17 +186,16 @@ nav {
     transform: rotate(90deg);
   }
 
-
   /* RES_NAV */
   .res_nav_content_dn {
     width: 100%;
-    height:50px;
+    height: 50px;
     position: fixed;
     top: 50px;
     right: -100%;
     display: block;
     background: white;
-    transition: .4s ease;
+    transition: 0.4s ease;
   }
   .res_nav_content_dn.active {
     right: 0;
@@ -198,7 +206,7 @@ nav {
     margin: auto;
     padding: 0 1.5rem;
   }
-  .res_nav_content_dn header{
+  .res_nav_content_dn header {
     height: inherit;
     display: flex;
     justify-content: space-between;
@@ -224,9 +232,9 @@ nav {
   .res_nav_content_dn .nav_links_ .link a {
     width: 100%;
     display: inline-block;
-    padding: .5rem 1rem;
+    padding: 0.5rem 1rem;
     font-size: 1.2rem;
-    transition: all .3s ease;
+    transition: all 0.3s ease;
   }
   .res_nav_content_dn .nav_links_ .link a:hover {
     background: #000044;
@@ -248,19 +256,19 @@ nav {
     width: 15px;
     height: 3px;
     background: #424242;
-    transition: all .3s ease;
+    transition: all 0.3s ease;
     display: inline-block;
   }
   .res_nav_content_dn .content .close-btn:hover {
     background: #fefefe;
   }
   .res_nav_content_dn .close-btn span:nth-child(1) {
-    transform: translate(-50%, -50%) rotate(-45deg) ;
+    transform: translate(-50%, -50%) rotate(-45deg);
   }
   .res_nav_content_dn .close-btn span:nth-child(2) {
     transform: translate(-50%, -50%) rotate(45deg);
   }
-  .res_nav_content_dn .close-btn:hover span{
-    transform: translate(-50%, -50%) rotate(0)
-}
+  .res_nav_content_dn .close-btn:hover span {
+    transform: translate(-50%, -50%) rotate(0);
+  }
 }

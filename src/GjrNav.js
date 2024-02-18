@@ -1,5 +1,6 @@
 import { Hero } from "./Hero";
 import { Link } from "react-router-dom";
+import "./GjrNavbar.css";
 
 const slides = [
   { url: "images/gjr-img-01.jpg", title: "sky_img_01" },
@@ -12,9 +13,7 @@ export const GjrNav = () => {
   return (
     <>
       <div className="gjr_section">
-        
         <div className="nav_content">
-          
           <div className="gjr_banners">
             <div className="gjr_top_banner">
               <div className="gjr_top_banner_content">
@@ -28,19 +27,18 @@ export const GjrNav = () => {
                   <p>
                     <Link to="mailto:info@gjrghana.com" target="self">
                       <span>
-                        <i className="fa fa-envelope" ></i>
+                        <i className="fa fa-envelope"></i>
                         info@gjrghana.com
                       </span>
                     </Link>
                   </p>
                   <p>
-                    <Link to='tel:002330244250280' target="self">
-                    <span>
-                      <i className="fa fa-phone"></i>
-                      +233 244 250 280 | +233 209 915 946
-                    </span>
+                    <Link to="tel:002330244250280" target="self">
+                      <span>
+                        <i className="fa fa-phone"></i>
+                        +233 244 250 280 | +233 209 915 946
+                      </span>
                     </Link>
-                  
                   </p>
                 </div>
               </div>
@@ -103,13 +101,132 @@ export const GjrNav = () => {
                         Fitted Wardrobes
                         <div className="fa fa-angle-down"></div>
                       </span>
+
                       <div className="gjr_mega_drop_menu">
                         <div className="mega_drop_menu_content">
                           <div className="card">
                             <div className="card_img_box">
+                              <img src="images/gjr-img-02.jpg" alt="" />
+                            </div>
+
+                            <div className="card_title">
+                              <h3>ALL RANGES</h3>
+                            </div>
+
+                            <div className="specs">
+                              <a href="">Styles</a>
+                              <a href="">Handles</a>
+                            </div>
+                          </div>
+
+                          <div className="card">
+                            <div className="card_img_box">
                               <img src="images/gjr-img-01.jpg" alt="" />
                             </div>
-                            <div className="card_title"></div>
+
+                            <div className="card_title">
+                              <h3>WALK-IN WARDROBES</h3>
+                            </div>
+
+                            <div className="specs">
+                              <a href="">Finishes</a>
+                              <a href="">Headboards</a>
+                            </div>
+                          </div>
+
+                          <div className="card">
+                            <div className="card_img_box">
+                              <img src="images/gjr-img-03.jpg" alt="" />
+                            </div>
+
+                            <div className="card_title">
+                              <h3>WARDROBE INTERIORS</h3>
+                            </div>
+
+                            <div className="specs">
+                              <a href="">Colours</a>
+                              <a href="">Mirrors</a>
+                            </div>
+                          </div>
+
+                          <div className="card">
+                            <div className="card_img_box">
+                              <img src="images/gjr-img-03.jpg" alt="" />
+                            </div>
+
+                            <div className="card_title">
+                              <h3>CLEVER STORAGE</h3>
+                            </div>
+
+                            <div className="specs">
+                              <a href="">Matching Bedroom Wardrobes</a>
+                              <a href="">Stools</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <span>
+                        Sliding Wardrobes
+                        <div className="fa fa-angle-down"></div>
+                      </span>
+                      <div className="gjr_mega_drop_menu">
+                        <div className="mega_drop_menu_content">
+                          <div className="card">
+                            <div className="card_img_box">
+                              <img src="images/gjr-img-02.jpg" alt="" />
+                            </div>
+
+                            <div className="card_title">
+                              <h3>ALL RANGES</h3>
+                            </div>
+
+                            <div className="specs">
+                              <a href="">Styles</a>
+                              <a href="">Handles</a>
+                            </div>
+                          </div>
+
+                          <div className="card">
+                            <div className="card_img_box">
+                              <img src="images/gjr-img-01.jpg" alt="" />
+                            </div>
+
+                            <div className="card_title">
+                              <h3>ALL RANGES</h3>
+                            </div>
+
+                            <div className="specs">
+                              <a href="">Styles</a>
+                              <a href="">Handles</a>
+                            </div>
+                          </div>
+
+                          <div className="card">
+                            <div className="card_img_box">
+                              <img src="images/gjr-img-02.jpg" alt="" />
+                            </div>
+
+                            <div className="card_title">
+                              <h3>ALL RANGES</h3>
+                            </div>
+
+                            <div className="specs">
+                              <a href="">Styles</a>
+                              <a href="">Handles</a>
+                            </div>
+                          </div>
+
+                          <div className="card">
+                            <div className="card_img_box">
+                              <img src="images/gjr-img-03.jpg" alt="" />
+                            </div>
+
+                            <div className="card_title">
+                              <h3>ALL RANGES</h3>
+                            </div>
+
                             <div className="specs">
                               <a href="">Styles</a>
                               <a href="">Handles</a>
@@ -120,16 +237,66 @@ export const GjrNav = () => {
                     </li>
                     <li>
                       <span>
-                      Sliding Wardrobes
-                      <div className="fa fa-angle-down"></div>
+                        Home Office
+                        <div className="fa fa-angle-down"></div>
                       </span>
+
                       <div className="gjr_mega_drop_menu">
                         <div className="mega_drop_menu_content">
                           <div className="card">
                             <div className="card_img_box">
                               <img src="images/gjr-img-01.jpg" alt="" />
                             </div>
-                            <div className="card_title"></div>
+
+                            <div className="card_title">
+                              <h3>ALL RANGES</h3>
+                            </div>
+
+                            <div className="specs">
+                              <a href="">Styles</a>
+                              <a href="">Handles</a>
+                            </div>
+                          </div>
+
+                          <div className="card">
+                            <div className="card_img_box">
+                              <img src="images/gjr-img-03.jpg" alt="" />
+                            </div>
+
+                            <div className="card_title">
+                              <h3>ALL RANGES</h3>
+                            </div>
+
+                            <div className="specs">
+                              <a href="">Styles</a>
+                              <a href="">Handles</a>
+                            </div>
+                          </div>
+
+                          <div className="card">
+                            <div className="card_img_box">
+                              <img src="images/gjr-img-04.jpg" alt="" />
+                            </div>
+
+                            <div className="card_title">
+                              <h3>ALL RANGES</h3>
+                            </div>
+
+                            <div className="specs">
+                              <a href="">Styles</a>
+                              <a href="">Handles</a>
+                            </div>
+                          </div>
+
+                          <div className="card">
+                            <div className="card_img_box">
+                              <img src="images/gjr-img-03.jpg" alt="" />
+                            </div>
+
+                            <div className="card_title">
+                              <h3>ALL RANGES</h3>
+                            </div>
+
                             <div className="specs">
                               <a href="">Styles</a>
                               <a href="">Handles</a>
@@ -137,21 +304,68 @@ export const GjrNav = () => {
                           </div>
                         </div>
                       </div>
-                     
                     </li>
                     <li>
                       <span>
-                      Home Office
-                      <div className="fa fa-angle-down"></div>
+                        Fitted Living
+                        <div className="fa fa-angle-down"></div>
                       </span>
-                      
                       <div className="gjr_mega_drop_menu">
                         <div className="mega_drop_menu_content">
                           <div className="card">
                             <div className="card_img_box">
                               <img src="images/gjr-img-01.jpg" alt="" />
                             </div>
-                            <div className="card_title"></div>
+
+                            <div className="card_title">
+                              <h3>ALL RANGES</h3>
+                            </div>
+
+                            <div className="specs">
+                              <a href="">Styles</a>
+                              <a href="">Handles</a>
+                            </div>
+                          </div>
+
+                          <div className="card">
+                            <div className="card_img_box">
+                              <img src="images/gjr-img-02.jpg" alt="" />
+                            </div>
+
+                            <div className="card_title">
+                              <h3>ALL RANGES</h3>
+                            </div>
+
+                            <div className="specs">
+                              <a href="">Styles</a>
+                              <a href="">Handles</a>
+                            </div>
+                          </div>
+
+                          <div className="card">
+                            <div className="card_img_box">
+                              <img src="images/gjr-img-04.jpg" alt="" />
+                            </div>
+
+                            <div className="card_title">
+                              <h3>ALL RANGES</h3>
+                            </div>
+
+                            <div className="specs">
+                              <a href="">Styles</a>
+                              <a href="">Handles</a>
+                            </div>
+                          </div>
+
+                          <div className="card">
+                            <div className="card_img_box">
+                              <img src="images/gjr-img-04.jpg" alt="" />
+                            </div>
+
+                            <div className="card_title">
+                              <h3>ALL RANGES</h3>
+                            </div>
+
                             <div className="specs">
                               <a href="">Styles</a>
                               <a href="">Handles</a>
@@ -159,12 +373,11 @@ export const GjrNav = () => {
                           </div>
                         </div>
                       </div>
-                      
                     </li>
                     <li>
                       <span>
-                      Fitted Living
-                      <div className="fa fa-angle-down"></div>
+                        Understairs
+                        <div className="fa fa-angle-down"></div>
                       </span>
                       <div className="gjr_mega_drop_menu">
                         <div className="mega_drop_menu_content">
@@ -172,7 +385,56 @@ export const GjrNav = () => {
                             <div className="card_img_box">
                               <img src="images/gjr-img-01.jpg" alt="" />
                             </div>
-                            <div className="card_title"></div>
+
+                            <div className="card_title">
+                              <h3>ALL RANGES</h3>
+                            </div>
+
+                            <div className="specs">
+                              <a href="">Styles</a>
+                              <a href="">Handles</a>
+                            </div>
+                          </div>
+
+                          <div className="card">
+                            <div className="card_img_box">
+                              <img src="images/gjr-img-03.jpg" alt="" />
+                            </div>
+
+                            <div className="card_title">
+                              <h3>ALL RANGES</h3>
+                            </div>
+
+                            <div className="specs">
+                              <a href="">Styles</a>
+                              <a href="">Handles</a>
+                            </div>
+                          </div>
+
+                          <div className="card">
+                            <div className="card_img_box">
+                              <img src="images/gjr-img-02.jpg" alt="" />
+                            </div>
+
+                            <div className="card_title">
+                              <h3>ALL RANGES</h3>
+                            </div>
+
+                            <div className="specs">
+                              <a href="">Styles</a>
+                              <a href="">Handles</a>
+                            </div>
+                          </div>
+
+                          <div className="card">
+                            <div className="card_img_box">
+                              <img src="images/gjr-img-04.jpg" alt="" />
+                            </div>
+
+                            <div className="card_title">
+                              <h3>ALL RANGES</h3>
+                            </div>
+
                             <div className="specs">
                               <a href="">Styles</a>
                               <a href="">Handles</a>
@@ -180,12 +442,11 @@ export const GjrNav = () => {
                           </div>
                         </div>
                       </div>
-                     
                     </li>
                     <li>
                       <span>
-                      Understairs
-                      <div className="fa fa-angle-down"></div>
+                        Awkward Spaces
+                        <div className="fa fa-angle-down"></div>
                       </span>
                       <div className="gjr_mega_drop_menu">
                         <div className="mega_drop_menu_content">
@@ -193,7 +454,56 @@ export const GjrNav = () => {
                             <div className="card_img_box">
                               <img src="images/gjr-img-01.jpg" alt="" />
                             </div>
-                            <div className="card_title"></div>
+
+                            <div className="card_title">
+                              <h3>ALL RANGES</h3>
+                            </div>
+
+                            <div className="specs">
+                              <a href="">Styles</a>
+                              <a href="">Handles</a>
+                            </div>
+                          </div>
+
+                          <div className="card">
+                            <div className="card_img_box">
+                              <img src="images/gjr-img-03.jpg" alt="" />
+                            </div>
+
+                            <div className="card_title">
+                              <h3>ALL RANGES</h3>
+                            </div>
+
+                            <div className="specs">
+                              <a href="">Styles</a>
+                              <a href="">Handles</a>
+                            </div>
+                          </div>
+
+                          <div className="card">
+                            <div className="card_img_box">
+                              <img src="images/gjr-img-01.jpg" alt="" />
+                            </div>
+
+                            <div className="card_title">
+                              <h3>ALL RANGES</h3>
+                            </div>
+
+                            <div className="specs">
+                              <a href="">Styles</a>
+                              <a href="">Handles</a>
+                            </div>
+                          </div>
+
+                          <div className="card">
+                            <div className="card_img_box">
+                              <img src="images/gjr-img-03.jpg" alt="" />
+                            </div>
+
+                            <div className="card_title">
+                              <h3>ALL RANGES</h3>
+                            </div>
+
                             <div className="specs">
                               <a href="">Styles</a>
                               <a href="">Handles</a>
@@ -201,53 +511,12 @@ export const GjrNav = () => {
                           </div>
                         </div>
                       </div>
-                     
                     </li>
-                    <li>
-                      <span>
-                      Awkward Spaces
-                      <div className="fa fa-angle-down"></div>
-                      </span>
-                      <div className="gjr_mega_drop_menu">
-                        <div className="mega_drop_menu_content">
-                          <div className="card">
-                            <div className="card_img_box">
-                              <img src="images/gjr-img-01.jpg" alt="" />
-                            </div>
-                            <div className="card_title"></div>
-                            <div className="specs">
-                              <a href="">Styles</a>
-                              <a href="">Handles</a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </li>
-                    {/* <li>
-                      <span>
-                      Why GJR
-                      <div className="fa fa-angle-down"></div>
-                      </span>
-                      <div className="gjr_mega_drop_menu">
-                        <div className="mega_drop_menu_content">
-                          <div className="card">
-                            <div className="card_img_box">
-                              <img src="images/gjr-img-01.jpg" alt="" />
-                            </div>
-                            <div className="card_title"></div>
-                            <div className="specs">
-                              <a href="">Styles</a>
-                              <a href="">Handles</a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </li> */}
                   </ul>
                 </div>
               </div>
             </div>
-
+            
             <div className="gjr_fourth_banner">
               <div className="fourth_banner_content">
                 <ul>
@@ -264,18 +533,6 @@ export const GjrNav = () => {
                 </ul>
               </div>
             </div>
-
-
-          </div>
-
-
-        </div>
-
-       
-
-        <div className="gjr_category">
-          <div className="gjr_cat_content">
-            <h1>GJR Category</h1>
           </div>
         </div>
       </div>

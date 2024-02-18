@@ -2,22 +2,21 @@ import { Navbar } from "./Navbar";
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
-import { Home } from './components/Home';
-import { Skywalker } from './components/Skywalker';
-import { Gjr } from './components/Gjr';
-import { Librex } from './components/Librex';
-import { Fifthstar } from './components/Fifthstar';
+import { Home } from "./components/Home";
+import { Skywalker } from "./components/Skywalker";
+import { Gjr } from "./components/Gjr";
+import { Librex } from "./components/Librex";
+import { Fifthstar } from "./components/Fifthstar";
 
-import { About } from './components/About';
-import { Contact } from './components/Contact';
-import { Careers } from './components/Careers';
+import { About } from "./components/About";
+import { Contact } from "./components/Contact";
+import { Careers } from "./components/Careers";
 import { Brochure } from "./components/Brochure";
 import { BookVisit } from "./components/BookVisit";
 
-
-
-
-
+import { Terms } from "./components/Terms";
+import { Delivery } from "./components/Delivery";
+import { Other } from "./components/Other";
 
 function App() {
   return (
@@ -25,7 +24,6 @@ function App() {
       <Navbar />
       <div className="main_content">
         <Routes>
-          
           <Route path="/" element={<Home />} />
           <Route path="/skywalker" element={<Skywalker />} />
           <Route path="/gjr" element={<Gjr />} />
@@ -39,20 +37,14 @@ function App() {
           <Route path="/brochure" element={<Brochure />} />
           <Route path="/book_visit" element={<BookVisit />} />
 
+
+          <Route path="/terms" element={<Terms />} />
+          <Route path="/delivery" element={<Delivery />} />
+          <Route path="/other" element={<Other />} />
         </Routes>
       </div>
-
     </Router>
   );
 }
 
 export default App;
-
-
-
-
-
-
-
-
-

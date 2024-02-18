@@ -21,17 +21,16 @@ export const Gjr = () => {
         <div className="gjr-better_life_content">
           <div className="life_text">
             <p>Life is better with storage!</p>
-
             <p>
               As on of the emerging fitted wardrobe companies, we believe that
               an organised life is a happy life. That's why our fitted furniture
               is built to last and is available in a variety of styles and
               finishes, from contemporary to classic.
             </p>
-
-            <button data-text="BOOK A FREE DESIGN VISIT">BOOK A FREE DESIGN VISIT</button>
+            <button data-text="BOOK A FREE DESIGN VISIT">
+              BOOK A FREE DESIGN VISIT
+            </button>
           </div>
-
           <div className="life_images_box">
             <div className="life_img_box">
               <img src="images/gjr-img-02.jpg" alt="" />
@@ -54,26 +53,19 @@ export const Gjr = () => {
               tailor-made collections below.
             </p>
           </div>
-
           <div className="clever_images_box">
-
             <div className="clever_img_box">
               <img src="images/gjr-img-02.jpg" alt="" />
               <div className="title">Fitted Wardrobes</div>
             </div>
-
             <div className="clever_img_box">
               <img src="images/gjr-img-03.jpg" alt="" />
               <div className="title">Living Spaces</div>
             </div>
-
-
             <div className="clever_img_box">
               <img src="images/gjr-img-02.jpg" alt="" />
               <div className="title">Living Spaces</div>
             </div>
-
-
             <div className="clever_img_box">
               <img src="images/gjr-img-01.jpg" alt="" />
               <div className="title">Living Spaces</div>
@@ -81,7 +73,6 @@ export const Gjr = () => {
           </div>
         </div>
       </div>
-
     </>
   );
 };

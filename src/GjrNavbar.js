@@ -1,6 +1,6 @@
 import { Hero } from "./Hero";
 import { Link } from "react-router-dom";
-import './GjrNavbar.css';
+import "./GjrNavbar.css";
 
 const slides = [
   { url: "images/gjr-img-01.jpg", title: "sky_img_01" },
@@ -12,10 +12,8 @@ const slides = [
 export const GjrNavbar = () => {
   return (
     <>
-    <div className="gjr_section">
-        
+      <div className="gjr_section">
         <div className="nav_content">
-          
           <div className="gjr_banners">
             <div className="gjr_top_banner">
               <div className="gjr_top_banner_content">
@@ -29,19 +27,18 @@ export const GjrNavbar = () => {
                   <p>
                     <Link to="mailto:info@gjrghana.com" target="self">
                       <span>
-                        <i className="fa fa-envelope" ></i>
+                        <i className="fa fa-envelope"></i>
                         info@gjrghana.com
                       </span>
                     </Link>
                   </p>
                   <p>
-                    <Link to='tel:002330244250280' target="self">
-                    <span>
-                      <i className="fa fa-phone"></i>
-                      +233 244 250 280 | +233 209 915 946
-                    </span>
+                    <Link to="tel:002330244250280" target="self">
+                      <span>
+                        <i className="fa fa-phone"></i>
+                        +233 244 250 280 | +233 209 915 946
+                      </span>
                     </Link>
-                  
                   </p>
                 </div>
               </div>
@@ -107,9 +104,7 @@ export const GjrNavbar = () => {
 
                       <div className="gjr_mega_drop_menu">
                         <div className="mega_drop_menu_content">
-                          
                           <div className="card">
-                            
                             <div className="card_img_box">
                               <img src="images/gjr-img-02.jpg" alt="" />
                             </div>
@@ -124,9 +119,7 @@ export const GjrNavbar = () => {
                             </div>
                           </div>
 
-
-                        <div className="card">
-                            
+                          <div className="card">
                             <div className="card_img_box">
                               <img src="images/gjr-img-01.jpg" alt="" />
                             </div>
@@ -134,7 +127,7 @@ export const GjrNavbar = () => {
                             <div className="card_title">
                               <h3>WALK-IN WARDROBES</h3>
                             </div>
-                            
+
                             <div className="specs">
                               <a href="">Finishes</a>
                               <a href="">Headboards</a>
@@ -142,7 +135,6 @@ export const GjrNavbar = () => {
                           </div>
 
                           <div className="card">
-                            
                             <div className="card_img_box">
                               <img src="images/gjr-img-03.jpg" alt="" />
                             </div>
@@ -150,16 +142,14 @@ export const GjrNavbar = () => {
                             <div className="card_title">
                               <h3>WARDROBE INTERIORS</h3>
                             </div>
-                            
+
                             <div className="specs">
                               <a href="">Colours</a>
                               <a href="">Mirrors</a>
                             </div>
                           </div>
 
-
                           <div className="card">
-                            
                             <div className="card_img_box">
                               <img src="images/gjr-img-03.jpg" alt="" />
                             </div>
@@ -167,27 +157,23 @@ export const GjrNavbar = () => {
                             <div className="card_title">
                               <h3>CLEVER STORAGE</h3>
                             </div>
-                            
+
                             <div className="specs">
                               <a href="">Matching Bedroom Wardrobes</a>
                               <a href="">Stools</a>
                             </div>
                           </div>
-
-
                         </div>
                       </div>
-                      
                     </li>
                     <li>
                       <span>
-                      Sliding Wardrobes
-                      <div className="fa fa-angle-down"></div>
+                        Sliding Wardrobes
+                        <div className="fa fa-angle-down"></div>
                       </span>
                       <div className="gjr_mega_drop_menu">
                         <div className="mega_drop_menu_content">
-                          
-                        <div className="card">
+                          <div className="card">
                             <div className="card_img_box">
                               <img src="images/gjr-img-02.jpg" alt="" />
                             </div>
@@ -195,12 +181,11 @@ export const GjrNavbar = () => {
                             <div className="card_title">
                               <h3>ALL RANGES</h3>
                             </div>
-                            
+
                             <div className="specs">
                               <a href="">Styles</a>
                               <a href="">Handles</a>
                             </div>
-
                           </div>
 
                           <div className="card">
@@ -211,12 +196,11 @@ export const GjrNavbar = () => {
                             <div className="card_title">
                               <h3>ALL RANGES</h3>
                             </div>
-                            
+
                             <div className="specs">
                               <a href="">Styles</a>
                               <a href="">Handles</a>
                             </div>
-                            
                           </div>
 
                           <div className="card">
@@ -227,54 +211,7 @@ export const GjrNavbar = () => {
                             <div className="card_title">
                               <h3>ALL RANGES</h3>
                             </div>
-                            
-                            <div className="specs">
-                              <a href="">Styles</a>
-                              <a href="">Handles</a>
-                            </div>
-                            
-                          </div>
 
-                          <div className="card">
-                            <div className="card_img_box">
-                              <img src="images/gjr-img-03.jpg" alt="" />
-                            </div>
-
-                            <div className="card_title">
-                              <h3>ALL RANGES</h3>
-                            </div>
-                            
-                            <div className="specs">
-                              <a href="">Styles</a>
-                              <a href="">Handles</a>
-                            </div>
-                            
-                          </div>
-
-
-
-                        </div>
-                      </div>
-                     
-                    </li>
-                    <li>
-                      <span>
-                      Home Office
-                      <div className="fa fa-angle-down"></div>
-                      </span>
-                      
-                      <div className="gjr_mega_drop_menu">
-                        <div className="mega_drop_menu_content">
-                          
-                        <div className="card">
-                            <div className="card_img_box">
-                              <img src="images/gjr-img-01.jpg" alt="" />
-                            </div>
-
-                            <div className="card_title">
-                              <h3>ALL RANGES</h3>
-                            </div>
-                            
                             <div className="specs">
                               <a href="">Styles</a>
                               <a href="">Handles</a>
@@ -289,7 +226,47 @@ export const GjrNavbar = () => {
                             <div className="card_title">
                               <h3>ALL RANGES</h3>
                             </div>
-                            
+
+                            <div className="specs">
+                              <a href="">Styles</a>
+                              <a href="">Handles</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <span>
+                        Home Office
+                        <div className="fa fa-angle-down"></div>
+                      </span>
+
+                      <div className="gjr_mega_drop_menu">
+                        <div className="mega_drop_menu_content">
+                          <div className="card">
+                            <div className="card_img_box">
+                              <img src="images/gjr-img-01.jpg" alt="" />
+                            </div>
+
+                            <div className="card_title">
+                              <h3>ALL RANGES</h3>
+                            </div>
+
+                            <div className="specs">
+                              <a href="">Styles</a>
+                              <a href="">Handles</a>
+                            </div>
+                          </div>
+
+                          <div className="card">
+                            <div className="card_img_box">
+                              <img src="images/gjr-img-03.jpg" alt="" />
+                            </div>
+
+                            <div className="card_title">
+                              <h3>ALL RANGES</h3>
+                            </div>
+
                             <div className="specs">
                               <a href="">Styles</a>
                               <a href="">Handles</a>
@@ -304,7 +281,7 @@ export const GjrNavbar = () => {
                             <div className="card_title">
                               <h3>ALL RANGES</h3>
                             </div>
-                            
+
                             <div className="specs">
                               <a href="">Styles</a>
                               <a href="">Handles</a>
@@ -319,25 +296,23 @@ export const GjrNavbar = () => {
                             <div className="card_title">
                               <h3>ALL RANGES</h3>
                             </div>
-                            
+
                             <div className="specs">
                               <a href="">Styles</a>
                               <a href="">Handles</a>
                             </div>
                           </div>
-
                         </div>
                       </div>
-                      
                     </li>
                     <li>
                       <span>
-                      Fitted Living
-                      <div className="fa fa-angle-down"></div>
+                        Fitted Living
+                        <div className="fa fa-angle-down"></div>
                       </span>
                       <div className="gjr_mega_drop_menu">
                         <div className="mega_drop_menu_content">
-                        <div className="card"> 
+                          <div className="card">
                             <div className="card_img_box">
                               <img src="images/gjr-img-01.jpg" alt="" />
                             </div>
@@ -345,14 +320,14 @@ export const GjrNavbar = () => {
                             <div className="card_title">
                               <h3>ALL RANGES</h3>
                             </div>
-                            
+
                             <div className="specs">
                               <a href="">Styles</a>
                               <a href="">Handles</a>
                             </div>
                           </div>
 
-                          <div className="card"> 
+                          <div className="card">
                             <div className="card_img_box">
                               <img src="images/gjr-img-02.jpg" alt="" />
                             </div>
@@ -360,14 +335,14 @@ export const GjrNavbar = () => {
                             <div className="card_title">
                               <h3>ALL RANGES</h3>
                             </div>
-                            
+
                             <div className="specs">
                               <a href="">Styles</a>
                               <a href="">Handles</a>
                             </div>
                           </div>
 
-                          <div className="card"> 
+                          <div className="card">
                             <div className="card_img_box">
                               <img src="images/gjr-img-04.jpg" alt="" />
                             </div>
@@ -375,14 +350,14 @@ export const GjrNavbar = () => {
                             <div className="card_title">
                               <h3>ALL RANGES</h3>
                             </div>
-                            
+
                             <div className="specs">
                               <a href="">Styles</a>
                               <a href="">Handles</a>
                             </div>
                           </div>
 
-                          <div className="card"> 
+                          <div className="card">
                             <div className="card_img_box">
                               <img src="images/gjr-img-04.jpg" alt="" />
                             </div>
@@ -390,27 +365,23 @@ export const GjrNavbar = () => {
                             <div className="card_title">
                               <h3>ALL RANGES</h3>
                             </div>
-                            
+
                             <div className="specs">
                               <a href="">Styles</a>
                               <a href="">Handles</a>
                             </div>
                           </div>
-
-                          
                         </div>
                       </div>
-                     
                     </li>
                     <li>
                       <span>
-                      Understairs
-                      <div className="fa fa-angle-down"></div>
+                        Understairs
+                        <div className="fa fa-angle-down"></div>
                       </span>
                       <div className="gjr_mega_drop_menu">
                         <div className="mega_drop_menu_content">
-                        <div className="card">
-                            
+                          <div className="card">
                             <div className="card_img_box">
                               <img src="images/gjr-img-01.jpg" alt="" />
                             </div>
@@ -418,7 +389,7 @@ export const GjrNavbar = () => {
                             <div className="card_title">
                               <h3>ALL RANGES</h3>
                             </div>
-                            
+
                             <div className="specs">
                               <a href="">Styles</a>
                               <a href="">Handles</a>
@@ -426,7 +397,6 @@ export const GjrNavbar = () => {
                           </div>
 
                           <div className="card">
-                            
                             <div className="card_img_box">
                               <img src="images/gjr-img-03.jpg" alt="" />
                             </div>
@@ -434,7 +404,7 @@ export const GjrNavbar = () => {
                             <div className="card_title">
                               <h3>ALL RANGES</h3>
                             </div>
-                            
+
                             <div className="specs">
                               <a href="">Styles</a>
                               <a href="">Handles</a>
@@ -442,7 +412,6 @@ export const GjrNavbar = () => {
                           </div>
 
                           <div className="card">
-                            
                             <div className="card_img_box">
                               <img src="images/gjr-img-02.jpg" alt="" />
                             </div>
@@ -450,7 +419,7 @@ export const GjrNavbar = () => {
                             <div className="card_title">
                               <h3>ALL RANGES</h3>
                             </div>
-                            
+
                             <div className="specs">
                               <a href="">Styles</a>
                               <a href="">Handles</a>
@@ -458,7 +427,6 @@ export const GjrNavbar = () => {
                           </div>
 
                           <div className="card">
-                            
                             <div className="card_img_box">
                               <img src="images/gjr-img-04.jpg" alt="" />
                             </div>
@@ -466,7 +434,7 @@ export const GjrNavbar = () => {
                             <div className="card_title">
                               <h3>ALL RANGES</h3>
                             </div>
-                            
+
                             <div className="specs">
                               <a href="">Styles</a>
                               <a href="">Handles</a>
@@ -474,17 +442,15 @@ export const GjrNavbar = () => {
                           </div>
                         </div>
                       </div>
-                     
                     </li>
                     <li>
                       <span>
-                      Awkward Spaces
-                      <div className="fa fa-angle-down"></div>
+                        Awkward Spaces
+                        <div className="fa fa-angle-down"></div>
                       </span>
                       <div className="gjr_mega_drop_menu">
                         <div className="mega_drop_menu_content">
-                        <div className="card">
-                            
+                          <div className="card">
                             <div className="card_img_box">
                               <img src="images/gjr-img-01.jpg" alt="" />
                             </div>
@@ -492,7 +458,7 @@ export const GjrNavbar = () => {
                             <div className="card_title">
                               <h3>ALL RANGES</h3>
                             </div>
-                            
+
                             <div className="specs">
                               <a href="">Styles</a>
                               <a href="">Handles</a>
@@ -500,7 +466,6 @@ export const GjrNavbar = () => {
                           </div>
 
                           <div className="card">
-                            
                             <div className="card_img_box">
                               <img src="images/gjr-img-03.jpg" alt="" />
                             </div>
@@ -508,7 +473,7 @@ export const GjrNavbar = () => {
                             <div className="card_title">
                               <h3>ALL RANGES</h3>
                             </div>
-                            
+
                             <div className="specs">
                               <a href="">Styles</a>
                               <a href="">Handles</a>
@@ -516,7 +481,6 @@ export const GjrNavbar = () => {
                           </div>
 
                           <div className="card">
-                            
                             <div className="card_img_box">
                               <img src="images/gjr-img-01.jpg" alt="" />
                             </div>
@@ -524,7 +488,7 @@ export const GjrNavbar = () => {
                             <div className="card_title">
                               <h3>ALL RANGES</h3>
                             </div>
-                            
+
                             <div className="specs">
                               <a href="">Styles</a>
                               <a href="">Handles</a>
@@ -532,7 +496,6 @@ export const GjrNavbar = () => {
                           </div>
 
                           <div className="card">
-                            
                             <div className="card_img_box">
                               <img src="images/gjr-img-03.jpg" alt="" />
                             </div>
@@ -540,7 +503,7 @@ export const GjrNavbar = () => {
                             <div className="card_title">
                               <h3>ALL RANGES</h3>
                             </div>
-                            
+
                             <div className="specs">
                               <a href="">Styles</a>
                               <a href="">Handles</a>
@@ -590,16 +553,10 @@ export const GjrNavbar = () => {
                 </ul>
               </div>
             </div>
-
-
           </div>
-
-
         </div>
 
-       <Hero slides={slides}/>
-
-    
+        <Hero slides={slides} />
       </div>
     </>
   );

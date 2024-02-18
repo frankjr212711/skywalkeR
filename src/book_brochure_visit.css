@@ -1,32 +1,19 @@
-
-
 /* BROCHURE STYLES */
 .brochure_page {
-  width:100%;
-
-  
+  width: 100%;
 }
-
 .brochure_page_content {
   width: 80%;
   padding: 2rem 0;
-  margin:1rem auto;
+  margin: 330px auto;
 }
-
-
-
-
-
 
 /* BOOK VISIT STYLES */
 .book_visit_page {
-  width:100%;
-
-  
+  width: 100%;
 }
-
 .book_visit_page_content {
   width: 80%;
   padding: 2rem 0;
-  margin: 1rem auto;
+  margin: 330px auto;
 }

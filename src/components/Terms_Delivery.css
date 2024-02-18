@@ -1,0 +1,11 @@
+
+
+.delivery_page, 
+.terms_page, 
+.other_page {
+  width: 100%;
+}
+.content {
+  width: 80%;
+  margin: 300px auto;
+}

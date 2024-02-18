@@ -1,14 +1,12 @@
 /* GJR */
 .gjr_section {
-  
   width: 100%;
   margin: auto;
   font-family: "Montserrat";
-
 }
 .gjr_section .nav_content {
   position: fixed;
-  top:100px;
+  top: 100px;
   left: 0px;
   width: 100%;
   /* height: 200px; */
@@ -73,7 +71,7 @@
   display: inline-flex;
   align-items: center;
   column-gap: 10px;
-  font-size: 1.2rem;;
+  font-size: 1.2rem;
 }
 .gjr_nav_links ul li {
   position: relative;
@@ -112,9 +110,9 @@
 .gjr_third_banner .gjr_third_banner_content {
   width: 80%;
   height: 100%;
-  margin: auto; 
+  margin: auto;
 }
-.third_banner_content .gjr_nav_items  {
+.third_banner_content .gjr_nav_items {
   width: 100%;
   height: 100%;
 }
@@ -122,7 +120,7 @@
   height: 100%;
   display: flex;
   align-items: center;
-  justify-content: space-between;;
+  justify-content: space-between;
 }
 .gjr_nav_items ul li span {
   display: flex;
@@ -138,10 +136,10 @@
   height: 50px;
   background: #f9f9f9;
 }
-.gjr_fourth_banner  .fourth_banner_content {
-  height: 100%;;
+.gjr_fourth_banner .fourth_banner_content {
+  height: 100%;
 }
- .gjr_fourth_banner .fourth_banner_content ul {
+.gjr_fourth_banner .fourth_banner_content ul {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
@@ -157,11 +155,11 @@
   width: 100%;
   height: 100%;
   color: #111;
-  padding: .5rem 0;
+  padding: 0.5rem 0;
   position: relative;
 }
 .gjr_fourth_banner .fourth_banner_content ul li a::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 150%;
   left: 0%;
@@ -169,16 +167,13 @@
   width: 0;
   height: 2px;
   background: #424242;
-  transition: all .3s ease;
+  transition: all 0.3s ease;
 }
 .gjr_fourth_banner .fourth_banner_content ul li a:hover::before {
   width: 100%;
 }
 
-
-
-
-.gjr_nav_items ul li .gjr_mega_drop_menu  {
+.gjr_nav_items ul li .gjr_mega_drop_menu {
   position: fixed;
   top: 280px;
   left: 0;
@@ -192,8 +187,8 @@
   visibility: hidden;
   /* transition: all .3s ease; */
 }
-.gjr_nav_items ul li:hover .gjr_mega_drop_menu  {
-  opacity: .9;
+.gjr_nav_items ul li:hover .gjr_mega_drop_menu {
+  opacity: 0.9;
   visibility: visible;
 }
 .gjr_mega_drop_menu .mega_drop_menu_content {
@@ -203,10 +198,7 @@
   border: 1px solid red;
 }
 
-.gjr_mega_drop_menu .mega_drop_menu_content  {
-  
+.gjr_mega_drop_menu .mega_drop_menu_content {
 }
 .gjr_mega_drop_menu_content .card {
-
 }
-

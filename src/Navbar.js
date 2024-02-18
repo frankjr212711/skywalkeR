@@ -30,7 +30,7 @@ export const Navbar = () => {
         <div className="content">
           <Link to="/">
             <div className="logo_box">
-            <i className="fa fa-search"></i>
+              <i className="fa fa-search"></i>
               {/* <i className="fab fa-typo3"></i> */}
             </div>
           </Link>
@@ -92,28 +92,27 @@ export const Navbar = () => {
             {/* <span></span> */}
             <span></span>
           </div>
-
         </div>
       </div>
 
-       <div
+      <div
         className={open ? "res_nav_content_dn active" : "res_nav_content_dn "}
       >
         <div className="content">
-           <header>
+          <header>
             <Link to="/">
               <div className="logo_box">
                 <h3>
                   <i className="fa fa-search"></i>
                 </h3>
-                 <i className="fab fa-typo3"></i> 
+                <i className="fab fa-typo3"></i>
               </div>
             </Link>
             <div className="close-btn" onClick={() => setOpen(!open)}>
               <span></span>
               <span></span>
             </div>
-          </header> 
+          </header>
 
           <div className={open ? "nav_links_ active" : "nav_links_"}>
             <ul>
@@ -145,7 +144,7 @@ export const Navbar = () => {
             </ul>
           </div>
         </div>
-      </div> 
+      </div>
     </nav>
   );
 };
