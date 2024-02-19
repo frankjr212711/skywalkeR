@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { Hero } from "../Hero";
 import "./Skywalker.css";
 import {SkywalkerNav} from './SkywalkerNav'
-import { SwiperHero } from "../SwiperHero";
+
 
 const slides = [
   { url: "images/sky-img-02.jpg", title: "sky_img_01" },

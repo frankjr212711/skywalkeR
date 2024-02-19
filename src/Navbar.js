@@ -27,50 +27,50 @@ export const Navbar = () => {
       </div>
 
       <div className="nav_content_dn">
+        
         <div className="content">
-          <Link to="/">
-            <div className="logo_box">
+          
+          <div className="logo_box">
+            <Link to="/">
               <i className="fa fa-search"></i>
-              {/* <i className="fab fa-typo3"></i> */}
-            </div>
-          </Link>
+            </Link>
+          </div>
+
           <div className="nav_links">
             <ul>
               <li className="link">
                 <Link to="/about">Why Us?</Link>
               </li>
               <li className="link">
-                <Link to="/skywalker">
-                  Skywalker
-                  {/* <i className="fa fa-caret-down"></i> */}
-                </Link>
-                {/* <div className="mega_drop_menu"></div> */}
-              </li>
-              <li className="link">
-                <Link to="/gjr">
-                  Gjr
-                  {/* <i className="fa fa-caret-down"></i> */}
-                </Link>
-                {/* <div className="mega_drop_menu"></div> */}
-              </li>
-              <li className="link">
-                <Link to="/librex">
-                  Librex
-                  {/* <i className="fa fa-caret-down"></i> */}
-                </Link>
-                {/* <div className="mega_drop_menu"></div> */}
-              </li>
-              <li className="link">
-                <Link to="/fifthstar">
-                  Fifthstar
-                  {/* <i className="fa fa-caret-down"></i> */}
-                </Link>
-                {/* <div className="mega_drop_menu"></div> */}
+                <span>
+                  <Link to="#">Our Companies</Link>
+                </span>
+                <div className="nav_mega_drop_menu">
+                  <div className="nav_mega_drop_menu_content">
+                    
+                    <div className="mega_nav_item">
+                    <Link to='/skywalker'>
+                        Skywalker Company Limited
+                      </Link>
+
+                    </div>
+                    <div className="mega_nav_item">
+                    <Link to='/gjr'>
+                        GJR Company Limited
+                      </Link>
+                    </div>
+                    <div className="mega_nav_item">
+                    <Link to='/librex'>
+                        Librex Holding
+                      </Link>
+                    </div>
+                  </div>
+                  
+                </div>
               </li>
               <li className="link">
                 <Link to="/company" className="drop_link">
                   Company
-                  {/* <i className="fa fa-caret-down"></i> */}
                 </Link>
                 <div className="drop_menu">
                   <Link to="/about" className="drop_link">
@@ -89,62 +89,18 @@ export const Navbar = () => {
 
           <div className="menu-btn" onClick={() => setOpen(!open)}>
             <span></span>
-            {/* <span></span> */}
             <span></span>
           </div>
         </div>
-      </div>
 
-      <div
-        className={open ? "res_nav_content_dn active" : "res_nav_content_dn "}
-      >
-        <div className="content">
-          <header>
-            <Link to="/">
-              <div className="logo_box">
-                <h3>
-                  <i className="fa fa-search"></i>
-                </h3>
-                <i className="fab fa-typo3"></i>
-              </div>
-            </Link>
-            <div className="close-btn" onClick={() => setOpen(!open)}>
-              <span></span>
-              <span></span>
-            </div>
-          </header>
 
-          <div className={open ? "nav_links_ active" : "nav_links_"}>
-            <ul>
-              <li className="link">
-                <Link to="/" onClick={closeMenu}>
-                  Home
-                </Link>
-              </li>
-              <li className="link">
-                <Link to="/skywalker" onClick={closeMenu}>
-                  Skywalker
-                </Link>
-              </li>
-              <li className="link">
-                <Link to="/gjr" onClick={closeMenu}>
-                  Gjr
-                </Link>
-              </li>
-              <li className="link">
-                <Link to="/librex" onClick={closeMenu}>
-                  Librex
-                </Link>
-              </li>
-              <li className="link">
-                <Link to="/fifthstar" onClick={closeMenu}>
-                  5thStar
-                </Link>
-              </li>
-            </ul>
-          </div>
-        </div>
+
       </div>
+      
+      
+
+
+
     </nav>
   );
 };

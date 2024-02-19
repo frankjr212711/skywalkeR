@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom";
 import { Hero } from "../Hero";
 import "./Skywalker.css";
-import "./SkywalkerNav.css"
-import { SwiperHero } from "../SwiperHero";
+import "./SkywalkerNav.css";
+
 
 const slides = [
   { url: "images/sky-img-02.jpg", title: "sky_img_01" },
@@ -29,8 +29,8 @@ export const SkywalkerNav = () => {
                   <Link to="" data-tooltip="@skywalkerghana">
                     <i className="fa-brands fa-twitter"></i>
                   </Link>
-                  <Link>
-                    <i className="fa-brands fa-tiktok"></i>
+                  <Link to="" data-tooltip="@skywalkerghana">
+                    <i className="fa-brands fa-tiktok" ></i>
                   </Link>
                 </div>
               </div>
@@ -77,7 +77,6 @@ export const SkywalkerNav = () => {
                           <div className="sky_item"></div>
                           <div className="sky_item"></div>
                           <div className="sky_item"></div>
-                        
                         </div>
                       </div>
                     </li>
@@ -87,9 +86,9 @@ export const SkywalkerNav = () => {
                         <i className="fa fa-caret-down"></i>
                       </Link>
                       <div className="mega_drop_menu_more">
-                        <Link to='/terms'>Terms & Condition</Link>
-                        <Link to='/delivery'>Delivery Services</Link>
-                        <Link to='/other'>Other</Link>
+                        <Link to="/terms">Terms & Condition</Link>
+                        <Link to="/delivery">Delivery Services</Link>
+                        <Link to="/other">Other</Link>
                       </div>
                     </li>
                   </ul>
