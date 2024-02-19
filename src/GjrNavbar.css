@@ -200,7 +200,7 @@
   left: 0%;
   /* transform: translateX(-50%); */
   width: 100%;
-  max-height: 460px;
+  height: 415px; 
   margin: auto;
   padding: 40px 0;
   background: rgb(255, 255, 255);
@@ -234,8 +234,6 @@
   width: 80%;
   height: 100%;
   margin: auto;
-
-
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;
@@ -247,8 +245,6 @@
 .mega_drop_menu_content .card .card_img_box {
   display: flex;
   height: 200px;
-
-  /* border: 1px solid red; */
 }
 .mega_drop_menu_content .card .card_title {
   font-weight: 500;

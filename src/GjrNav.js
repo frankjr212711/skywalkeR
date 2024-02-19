@@ -25,7 +25,11 @@ export const GjrNav = () => {
                 </Link>
                 <div className="gjr_contact">
                   <p>
-                    <Link to="mailto:info@gjrghana.com" target="self">
+                    <Link
+                      to="mailto:info@gjrghana.com"
+                      target="self"
+                      data-tooltip="Email: info@gjrghana.com"
+                    >
                       <span>
                         <i className="fa fa-envelope"></i>
                         info@gjrghana.com
@@ -33,7 +37,11 @@ export const GjrNav = () => {
                     </Link>
                   </p>
                   <p>
-                    <Link to="tel:002330244250280" target="self">
+                    <Link
+                      to="tel:002330244250280"
+                      target="self"
+                      data-tooltip="Call +233 244 250 280"
+                    >
                       <span>
                         <i className="fa fa-phone"></i>
                         +233 244 250 280 | +233 209 915 946
@@ -54,7 +62,10 @@ export const GjrNav = () => {
                 <div className="gjr_nav_links">
                   <ul>
                     <li>
-                      <Link to="/https://www.facebook.com">
+                      <Link
+                        to="/https://www.facebook.com"
+                        data-tooltip="@gjrkitchensghana"
+                      >
                         <i className="fa-brands fa-facebook-f"></i>
                         {/* Kitchens */}
                       </Link>
@@ -512,11 +523,31 @@ export const GjrNav = () => {
                         </div>
                       </div>
                     </li>
+                    {/* <li>
+                      <span>
+                      Why GJR
+                      <div className="fa fa-angle-down"></div>
+                      </span>
+                      <div className="gjr_mega_drop_menu">
+                        <div className="mega_drop_menu_content">
+                          <div className="card">
+                            <div className="card_img_box">
+                              <img src="images/gjr-img-01.jpg" alt="" />
+                            </div>
+                            <div className="card_title"></div>
+                            <div className="specs">
+                              <a href="">Styles</a>
+                              <a href="">Handles</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </li> */}
                   </ul>
                 </div>
               </div>
             </div>
-            
+
             <div className="gjr_fourth_banner">
               <div className="fourth_banner_content">
                 <ul>
@@ -535,6 +566,8 @@ export const GjrNav = () => {
             </div>
           </div>
         </div>
+
+        <Hero slides={slides} />
       </div>
     </>
   );
