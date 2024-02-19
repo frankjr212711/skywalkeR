@@ -202,7 +202,7 @@
   width: 100%;
   max-height: 460px;
   margin: auto;
-  padding: 40px 1rem;
+  padding: 40px 0;
   background: rgb(255, 255, 255);
   box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.3);
   color: #111;
@@ -231,11 +231,10 @@
   visibility: visible;
 }
 .gjr_mega_drop_menu .mega_drop_menu_content {
-  width: 100%;
+  width: 80%;
   height: 100%;
   margin: auto;
-  padding: 0 7.5rem;
-  /* border: 1px solid red; */
+
 
   display: grid;
   grid-template-columns: repeat(4, 1fr);
