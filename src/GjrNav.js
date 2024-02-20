@@ -100,6 +100,13 @@ export const GjrNav = () => {
                     </li>
                   </ul>
                 </div>
+
+                <div className="gjr_menu_btn">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+                
               </div>
             </div>
 
