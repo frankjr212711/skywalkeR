@@ -104,12 +104,16 @@ export const GjrNavbar = () => {
                   </ul>
                 </div>
 
+                
                 <div className="gjr_menu_btn">
                   <span></span>
                   <span></span>
                   <span></span>
                 </div>
 
+                <div className="gjr_response_menu">
+                  
+                </div>
 
               </div>
             </div>
@@ -578,8 +582,22 @@ export const GjrNavbar = () => {
                 </ul>
               </div>
             </div>
+
+
+
           </div>
+                    
+          
+
+
+
+
+
         </div>
+
+        
+
+
 
         <Hero slides={slides} />
       </div>

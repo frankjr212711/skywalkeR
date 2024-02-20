@@ -33,6 +33,14 @@ export const SkywalkerNav = () => {
                     <i className="fa-brands fa-tiktok" ></i>
                   </Link>
                 </div>
+
+
+                <div className="sky_menu_btn">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+                
               </div>
             </div>
             <div className="mid_banner">
@@ -61,6 +69,12 @@ export const SkywalkerNav = () => {
                     <span>+233 593 063 919</span>
                   </div>
                 </div>
+
+              
+
+
+
+
               </div>
             </div>
             <div className="third_banner">
