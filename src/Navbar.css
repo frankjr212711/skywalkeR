@@ -12,7 +12,7 @@ nav {
   width: 100%;
   height: 50px;
   /* background: red; */
-  border-bottom: 1px solid #f9f9f9;
+  border-bottom: 1px solid #ddd;
 }
 .nav_content_tp .content {
   width: 80%;
@@ -75,20 +75,20 @@ nav {
 
 .content .nav_links li a{
   text-transform: uppercase;
-  font-size: 14px;
+  font-size: 17px !important;
   position: relative;
 }
 .content .nav_links li {
   position: relative
 }
-.content .nav_links li::before{
+.content .nav_links li:nth-child(2):before{
   content: '';
   position: absolute;
-  bottom: -5px;
+  bottom: -14px;
   left: 50%;
   transform: translateX(-50%);
   width: 0%;
-  height: 3px;
+  height: 2px;
   background: #111;
   transition: all .3s ease;
 }
@@ -97,40 +97,40 @@ nav {
 }
 .nav_mega_drop_menu {
   position: fixed;
-  top: 150px;
-  left: 0;
+  top: 100px;
+  right: 0;
   width: 100%;
-  height: 350px;
+  /* padding: 3rem 0; */
+  height:50vh;
   background: rgb(255,255,255);
-  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.3);
+  /* box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.3); */
   visibility: hidden;
   opacity: 0;
   transition: all .3s ease;
+  border-top: 1px solid #ddd;
 }
 .content .nav_links li:hover .nav_mega_drop_menu {
-  top: 100px;
   visibility: visible;
   opacity: 1;
 }
 .nav_mega_drop_menu .nav_mega_drop_menu_content {
-  width: 50%;
-  height: inherit;
+  width: 80%;
   margin: auto;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-}
- .mega_nav_item {
-  /* border: 1px solid red; */
-  padding: 1rem;
-}
-.mega_nav_item a {
   height: 100%;
-  width: 100%;
-  display: block;
-  border: 1px solid red;
+  padding: 3rem 0;
 
-font-size: 1.2rem !important;
+  border: 1px solid red;
 }
+ .nav_mega_drop_menu_content span {
+  display: flex;
+  column-gap: 20px;
+ }
+ .nav_mega_drop_menu_content a {
+  display: block;
+ }
+
+
+
 
 
 .drop_menu {
@@ -153,11 +153,11 @@ font-size: 1.2rem !important;
   visibility: visible;
   opacity: 1;
 }
-.drop_menu a{ 
+.drop_menu a { 
   display: block;
   width: 100%;
   padding: .5rem 0rem .5rem 1rem;
-
+  font-size: 17px !important;
 }
 .drop_menu a:hover{
   background: #000044;

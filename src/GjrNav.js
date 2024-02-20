@@ -567,7 +567,6 @@ export const GjrNav = () => {
           </div>
         </div>
 
-        <Hero slides={slides} />
       </div>
     </>
   );

@@ -52,6 +52,9 @@ export const GjrNavbar = () => {
               </div>
             </div>
 
+            
+
+
             <div className="gjr_mid_banner">
               <div className="mid_banner_content">
                 <div className="gjr_mid_banner_text">
@@ -100,8 +103,19 @@ export const GjrNavbar = () => {
                     </li>
                   </ul>
                 </div>
+
+                <div className="gjr_menu_btn">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+
+
               </div>
             </div>
+
+            
+
 
             <div className="gjr_third_banner">
               <div className="third_banner_content">

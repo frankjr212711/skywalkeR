@@ -27,9 +27,7 @@ export const Navbar = () => {
       </div>
 
       <div className="nav_content_dn">
-        
         <div className="content">
-          
           <div className="logo_box">
             <Link to="/">
               <i className="fa fa-search"></i>
@@ -48,24 +46,38 @@ export const Navbar = () => {
                 <div className="nav_mega_drop_menu">
                   <div className="nav_mega_drop_menu_content">
                     
-                    <div className="mega_nav_item">
-                    <Link to='/skywalker'>
-                        Skywalker Company Limited
-                      </Link>
+                    <div className="content_photo">
+                      {/* <img src="" alt="" /> */}
+                    </div>
+                        
+                    <div className="content_links">
+                    <Link to="/skywalker" onClick={closeMenu}>
+                      <span>
+                          Skywalker Company Limited
+                          <i className="fa solid fa-angle-right"></i>
+                        </span>
+                        
+                    
+                    </Link>
+                    <Link to="/librex">
+                      <span>
+                          Librex Company Limited
+                          <i className="fa solid fa-angle-right"></i>
+                      </span>
+                      
+                    </Link>
 
-                    </div>
-                    <div className="mega_nav_item">
-                    <Link to='/gjr'>
-                        GJR Company Limited
-                      </Link>
-                    </div>
-                    <div className="mega_nav_item">
-                    <Link to='/librex'>
-                        Librex Holding
-                      </Link>
-                    </div>
-                  </div>
+                    <Link to="/gjr">
+                      <span>
+                          GJR Company Limited
+                          <i className="fa solid fa-angle-right"></i>
+                      </span>
+                      
                   
+                    </Link>
+                    </div>
+
+                  </div>
                 </div>
               </li>
               <li className="link">
@@ -92,15 +104,7 @@ export const Navbar = () => {
             <span></span>
           </div>
         </div>
-
-
-
       </div>
-      
-      
-
-
-
     </nav>
   );
 };
